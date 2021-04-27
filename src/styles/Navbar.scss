@@ -1,0 +1,77 @@
+@import "fonts.scss";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-side {
+  align-items: center;
+  background: #3f51b5;
+  display: flex;
+  justify-content: space-between;
+  .navbar-logo-link {
+    display: flex;
+    align-items: center;
+
+    .navbar-logo {
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      padding: 14px 0 14px 14px;
+      h3 {
+        color: #ffffff;
+        font-family: Roboto-Medium;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        letter-spacing: -0.0555556px;
+        line-height: 24px;
+        padding-left: 8px;
+      }
+    }
+    .navbar-link {
+      
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      margin-left: 34px;
+      padding: 5px;
+      padding-left: 7px;
+      z-index: 999;
+      border-radius:5px;
+      background: rgba(51, 51, 51, 0.2);
+      position: relative;
+      
+      p {
+        color: #cdd1ea;
+        font-family: Roboto-Regular;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: normal;
+        line-height: 16px;
+        margin-left: 14px;
+        margin-bottom: 0;
+      }
+      a{
+        color: #FFFFFF;
+        font-family: Roboto-Regular;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 16px;
+      }
+      img{
+         z-index: 99;
+      }
+    }
+  }
+
+  .navbar-icons {
+    display: flex;
+    img {
+      padding-right: 20px;
+    }
+  }
+}

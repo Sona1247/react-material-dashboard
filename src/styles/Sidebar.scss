@@ -1,0 +1,105 @@
+@import "fonts.scss";
+
+.sidebar {
+  align-items: flex-start;
+  background: #ffffff;
+  border: 1px solid rgba(63, 63, 68, 0.005);
+  box-shadow: 0px 1px 0px rgba(63, 63, 68, 0.05),
+    0px 1px 3px rgba(63, 63, 68, 0.15);
+  display: flex;
+  flex-direction: column;
+  height: 1016px;
+  justify-content: flex-start;
+  padding: 0 16px;
+  width: 270px;
+  .avatar {
+    align-items: center;
+    border-bottom: 1px solid #e4e7eb;
+    display: flex;
+    flex-direction: column;
+    height: 170px;
+    justify-content: center;
+    width: 100%;
+    h5 {
+      margin: 16px 0 0 0;
+    }
+    p{
+      margin-bottom: 0;
+    }
+  }
+
+  .side-NavLinks {
+    display: flex;
+    flex-direction: column;
+    padding-top: 24px;
+    .sidebar-support-side{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      // padding: 13px;
+      border-top: 1px solid  #E4E7EB;
+      h4{
+        margin: 24px 0 8px 0;
+        font-family: Roboto-Medium;
+font-style: normal;
+font-weight: 500;
+font-size: 13px;
+line-height: 15px;
+color: rgba(0, 0, 0, 0.328974);
+      }
+      .supportLink{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 13px;
+        width: 236px;
+        &:hover{
+          background: #f6f9fd;
+          border-radius: 4px;
+          box-shadow: inset 3px 0px 0px #1665d8;
+        }
+        .support{
+          padding-left: 10px;
+          text-decoration: none;
+          font-family: Roboto-Medium;
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 20px;
+letter-spacing: -0.05px;
+color: #66788A;
+        }
+      }
+    }
+    .navLinks {
+      &:nth-child(6){
+        margin-bottom: 16px;
+      }
+      &:hover {
+        background: #f6f9fd;
+        border-radius: 4px;
+        box-shadow: inset 3px 0px 0px #1665d8;
+      }
+
+      .list {
+        color: #66788a;
+        font-family: Roboto-Medium;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        letter-spacing: -0.05px;
+        line-height: 20px;
+        padding-left: 10px;
+        text-decoration: none;
+      }
+    }
+    .subNavLinks {
+      align-items: center;
+      display: flex;
+      justify-content: flex-start;
+      padding: 13px;
+      width: 236px;
+    }
+  }
+}
