@@ -59,6 +59,13 @@ color: rgba(0, 0, 0, 0.328974);
           border-radius: 4px;
           box-shadow: inset 3px 0px 0px #1665d8;
         }
+        img{
+          cursor: pointer;
+          rect{
+          &:hover{
+            fill: #3F51B5;
+          }}
+        }
         .support{
           padding-left: 10px;
           text-decoration: none;
@@ -69,6 +76,9 @@ font-size: 14px;
 line-height: 20px;
 letter-spacing: -0.05px;
 color: #66788A;
+&:hover{
+  color: #212529;
+}
         }
       }
     }
@@ -92,7 +102,11 @@ color: #66788A;
         line-height: 20px;
         padding-left: 10px;
         text-decoration: none;
+        &:hover{
+color: #212529;
+        }
       }
+      
     }
     .subNavLinks {
       align-items: center;
@@ -100,6 +114,13 @@ color: #66788A;
       justify-content: flex-start;
       padding: 13px;
       width: 236px;
+      img{
+        cursor: pointer;
+        rect{
+        &:hover{
+          fill: #3F51B5;
+        }}
+      }
     }
   }
 }

@@ -1,0 +1,88 @@
+@import "fonts.scss";
+.table-content {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 19px 27px 0 25px;
+  width: 85%;
+
+  .table-header {
+    align-items: center;
+    background: #ffffff;
+    border: 1px solid rgba(63, 63, 68, 0.005);
+    border-radius: 4px 0 0 0;
+    box-shadow: 0px 1px 0px rgba(63, 63, 68, 0.05),
+      0px 1px 3px rgba(63, 63, 68, 0.15);
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 24px 42px 27px;
+    width: 100%;
+    .table-header-first-side {
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      .table-header-title {
+        color: #3a3b3f;
+        font-family: Roboto-Medium;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        letter-spacing: -0.05px;
+        line-height: 20px;
+      }
+      .table-header-value {
+        color: #9ea0a5;
+        font-family: Roboto-Regular;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: normal;
+        line-height: 16px;
+        padding-left: 17px;
+      }
+    }
+    .table-header-second-side {
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      .table-header-subtitle {
+        color: #3a3b3f;
+        font-family: Roboto-Medium;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        letter-spacing: -0.05px;
+        line-height: 20px;
+      }
+      .table-direction {
+        height: 5px;
+        padding: 0 30px 0 15px;
+        cursor: pointer;
+      }
+      .table-button {
+        border: 1px solid #d4e6ff;
+        color: #1665d8;
+        font-family: Roboto-Medium;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        letter-spacing: 1.25px;
+        line-height: 16px;
+        padding: 11px 19px 9px 19px;
+        text-align: center;
+        text-transform: uppercase;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.MuiTableCell-body {
+  img {
+    padding-left: 25px;
+    padding-right: 8px;
+  }
+}
+.MuiTableCell-alignRight {
+  text-align: center !important;
+}

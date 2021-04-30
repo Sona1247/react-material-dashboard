@@ -1,13 +1,13 @@
 import React from "react";
 import "../styles/Sidebar.scss";
 import avatar from "../images/avatarPhoto.png";
-import sideIcon1 from "../images/sideLogo1.png";
-import sideIcon2 from "../images/sideLogo2.png";
-import sideIcon3 from "../images/sideLogo3.png";
-import sideIcon4 from "../images/sideLogo4.png";
-import sideIcon5 from "../images/sideLogo5.png";
-import sideIcon6 from "../images/sideLogo6.png";
-import sideIcon7 from "../images/sideLogo7.png";
+import sideIcon1 from "../images/sideLogo1.svg";
+import sideIcon2 from "../images/sideLogo2.svg";
+import sideIcon3 from "../images/sideLogo3.svg";
+import sideIcon4 from "../images/sideLogo4.svg";
+import sideIcon5 from "../images/sideLogo5.svg";
+import sideIcon6 from "../images/sideLogo6.svg";
+import sideIcon7 from "../images/sideLogo7.svg";
 
 import { NavLink } from "react-router-dom";
 const Sidebar = () => {

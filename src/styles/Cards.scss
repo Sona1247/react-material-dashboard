@@ -31,7 +31,27 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-
+.second-card-main-image{
+  background:#47B881;
+  border-radius: 50%;
+  width: 64px;
+  height: 64px;
+  justify-content:center;align-items:center;
+  img{
+    width: 28px;
+    height:28px;
+  }
+}
+.third-card-main-image{
+  border-radius: 50%;
+  width: 64px;
+  height: 64px;
+  background: #1070CA;
+  justify-content:center;align-items:center;
+  img{
+    width: 28px;height: 18px;
+  }
+}
       div {
         display: flex;
         flex-direction: column;
@@ -61,6 +81,9 @@
       display: flex;
       justify-content: flex-start;
       align-items: center;
+      .overPicture1{
+        position: absolute;
+      }
       .green-card-value {
         font-family: Roboto-Medium;
         font-style: normal;

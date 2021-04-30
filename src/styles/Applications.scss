@@ -8,9 +8,10 @@
     0px 1px 3px rgba(63, 63, 68, 0.15);
   display: flex;
   flex-direction: column;
-  height: 552px;
+  height: 517px;
+  margin: 16px 21px 0 20px;
   padding: 24px;
-  width: 377px;
+  width: 41%;
   .last-applications {
     align-items: center;
     display: flex;
@@ -25,6 +26,10 @@
       letter-spacing: -0.05px;
       line-height: 20px;
       text-align: right;
+      text-decoration: none;
+      &:hover{
+text-decoration:underline;
+      }
     }
     .direction {
       cursor: pointer;
@@ -62,7 +67,7 @@
     display: flex;
     justify-content: space-between;
     margin-top: 25px;
-    padding-bottom: 27px;
+    padding-bottom: 20px;
     .point {
       cursor: pointer;
     }

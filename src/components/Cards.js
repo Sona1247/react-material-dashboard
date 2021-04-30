@@ -1,10 +1,10 @@
 import React from "react";
 import "../styles/Cards.scss";
 import CardImage1 from "../images/CardImage1.png";
+import overPicture1 from "../images/overPicture1.png";
+import overPicture2 from "../images/overPicture2.png";
 import CardImage2 from "../images/CardImage2.png";
 import CardImage3 from "../images/CardImage3.png";
-import CardImage4 from "../images/CardImage4.png";
-import CardImage5 from "../images/CardImage5.png";
 import CardImage6 from "../images/CardImage6.png";
 import CardImage7 from "../images/CardImage7.png";
 import CardImage8 from "../images/CardImage8.png";
@@ -31,7 +31,9 @@ const Cards = () => {
             <h3>TOTAL USERS</h3>
             <h1>1600</h1>
           </div>
-          <img src={CardImage4} alt="cardImage" />
+         <div className="second-card-main-image">
+           <img src={overPicture1} alt="over"/>
+         </div>
         </div>
         <div className="card-value-content">
           <img src={CardImage3} alt="cardImage" />
@@ -45,7 +47,11 @@ const Cards = () => {
             <h3>PROGRESS</h3>
             <h1>75,5%</h1>
           </div>
-          <img src={CardImage5} alt="cardImage" />
+         
+<div className="third-card-main-image">
+<img className="card-over-picture2" src={overPicture2} alt="over"/>
+
+</div>
         </div>
         <div className="card-value-content">
           <img src={CardImage8} className="card-image8" alt="cardImage" />

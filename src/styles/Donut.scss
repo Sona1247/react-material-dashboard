@@ -1,0 +1,117 @@
+#chart {
+  max-width: 650px;
+  padding-top: 21px;
+}
+.chart-all-content {
+  background: #ffffff;
+  border: 1px solid rgba(63, 63, 68, 0.005);
+  border-radius: 4px;
+  box-shadow: 0px 1px 0px rgba(63, 63, 68, 0.05),
+    0px 1px 3px rgba(63, 63, 68, 0.15);
+  display: flex;
+  flex-direction: column;
+  height: 535px;
+  width: 24%;
+  .chart-header {
+    align-items: center;
+    border-bottom: 1px solid #e4e7eb;
+    display: flex;
+    justify-content: space-between;
+    padding: 18px 24px 17px 24px;
+    .chart-header-title {
+      color: #3a3b3f;
+      font-family: Roboto-Medium;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      letter-spacing: -0.05px;
+      line-height: 20px;
+    }
+    .chart-header-icon {
+      height: 16px;
+    }
+  }
+  .chartText {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 24px 0 65px 0;
+  }
+  .chart-content-container {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    .chart-content {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 10px 20px;
+      .chart-title {
+        color: #9ea0a5;
+        font-family: Roboto-Regular;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: normal;
+        line-height: 16px;
+        padding: 13px 0 8px 0;
+        text-align: center;
+      }
+      .chart-value {
+        font-family: Roboto-Medium;
+        font-size: 29px;
+        font-style: normal;
+        font-weight: 500;
+        letter-spacing: -0.241667px;
+        line-height: 32px;
+      
+        
+      }
+    }
+  }
+  .chart-last-side,
+  .first-side,
+  .second-side {
+    display: flex;
+  }
+  .chart-last-side {
+    align-items: center;
+    border-top: 1px solid #e4e7eb;
+    justify-content: space-between;
+    padding: 10px;
+    .first-side,
+    .second-side {
+      align-items: center;
+      display: flex;
+    }
+    .first-side {
+      p {
+        color: #3a3b3f;
+        font-family: Roboto-Medium;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        letter-spacing: -0.05px;
+        line-height: 20px;
+      }
+    }
+    .second-side {
+      p {
+        color: #1070ca;
+        font-family: Roboto-Medium;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        letter-spacing: -0.05px;
+        line-height: 20px;
+        text-align: right;
+      }
+    }
+    .first-side-direction,
+    .second-side-direction {
+      height: 10px;
+      padding-left: 6px;
+    }
+  }
+}
