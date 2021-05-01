@@ -75,14 +75,17 @@
       }
     }
   }
-}
-
-.MuiTableCell-body {
-  img {
-    padding-left: 25px;
-    padding-right: 8px;
+  .MuiTableCell-body {
+    img {
+      padding-left: 25px;
+      padding-right: 8px;
+    }
   }
-}
-.MuiTableCell-alignRight {
-  text-align: center !important;
+  .MuiTableCell-alignRight {
+    text-align: center !important;
+    color: #9ea0a5 ;
+  }
+  .MuiTableCell-head {
+    color: #3a3b3f;
+  }
 }

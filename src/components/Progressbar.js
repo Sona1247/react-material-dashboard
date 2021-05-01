@@ -1,21 +1,22 @@
 import React, { useState } from "react";
 import  ReactApexChart  from "react-apexcharts";
-
+import secondDirection from "../images/blueIcon.png";
+import "./../styles/ProgressBar.scss";
+import progressDirection from "../images/progressDirection.png"
 const Progressbar = () => {
   const [options] = useState({
     series: [
       {
-        name: "Net Profit",
-        data: [44, 55, 57, 56, 61, 58, 63, 60, 66],
+        name: "Mobile",
+        data: ["17k", "4k", "18k", "27k", "29k", "17k","19k"],
+        color: "#1665D8",
       },
       {
-        name: "Revenue",
-        data: [76, 85, 101, 98, 87, 105, 91, 114, 94],
+        name: "Desktop",
+        data: ["10k","18k","14k","28k","26k","22k","13k"],
+        color: "#EDF0F2",
       },
-      {
-        name: "Free Cash Flow",
-        data: [35, 41, 36, 26, 45, 48, 52, 53, 41],
-      },
+     
     ],
     options: {
       legend:{
@@ -26,7 +27,8 @@ const Progressbar = () => {
       },
       chart: {
         type: "bar",
-        height: 350,
+        height: 400,
+       
         zoom:{
           enabled:false,
         },
@@ -39,8 +41,10 @@ const Progressbar = () => {
       plotOptions: {
         bar: {
           horizontal: false,
-          columnWidth: "55%",
+          columnWidth: "27%",
+          startingShape:"rounded",
           endingShape: "rounded",
+          borderRadius:4.5,
         },
       },
       dataLabels: {
@@ -48,24 +52,42 @@ const Progressbar = () => {
       },
       stroke: {
         show: true,
-        width: 2,
+        width: 4,
         colors: ["transparent"],
       },
       xaxis: {
         categories: [
-          "Feb",
-          "Mar",
-          "Apr",
-          "May",
-          "Jun",
-          "Jul",
-          "Aug",
-          "Sep",
-          "Oct",
+          "1 Aug",
+          "2 Aug",
+          "3 Aug",
+          "4 Aug",
+          "5 Aug",
+          "6 Aug",
+          "7 Aug",
         ],
+        axisTicks:{
+          show:false,
+        },
+        axisBorder:{
+          show:false
+        },
+        labels:{
+          style:{
+           colors:"#A6B1BB"
+          }
+        }
       },
       yaxis: {
-      
+        tickAmount: 7,
+        min: 0,
+        max:35,
+        labels:{
+          formatter:(value) => {
+          return(value) + "k"},
+          style:{
+            colors:"#A6B1BB"
+           }
+        },
       },
       fill: {
         opacity: 1,
@@ -73,21 +95,34 @@ const Progressbar = () => {
       tooltip: {
         y: {
           formatter: function (val) {
-            return "$ " + val + " thousands";
+            return "" + val + "k";
           },
         },
       },
     },
   });
   return (
-    <div id="chart">
+<div className="all-progressbar-content">
+<div className="header-side-progressBar">
+  <h2>Users by device</h2>
+  <div className="header-second-side">
+    <p>Last 7 days</p>
+    <img src={progressDirection} alt="icon"/>
+  </div>
+</div>
+    <div id="progress-chart">
       <ReactApexChart
         options={options.options}
         series={options.series}
         type="bar"
-        height={350}
+        height={400}
       />
     </div>
+    <div className="last-side-progressBar">
+      <h4>Audience Overview</h4>
+      <img src={secondDirection} alt="blue-icon"/>
+    </div>
+</div>
   );
 };
 

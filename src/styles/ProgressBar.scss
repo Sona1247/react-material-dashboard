@@ -1,0 +1,72 @@
+@import "fonts.scss";
+.all-progressbar-content {
+  background: #ffffff;
+  border: 1px solid rgba(63, 63, 68, 0.005);
+  border-radius: 4px;
+  box-shadow: 0px 1px 0px rgba(63, 63, 68, 0.05),
+    0px 1px 3px rgba(63, 63, 68, 0.15);
+  display: flex;
+  flex-direction: column;
+  height: 519px;
+  justify-content: center;
+  width: 74%;
+
+  .header-side-progressBar {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 18px 15px 0 18px;
+    h2 {
+      color: #3a3b3f;
+      font-family: Roboto-Medium;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      letter-spacing: -0.05px;
+      line-height: 20px;
+    }
+    .header-second-side {
+      align-items: center;
+      display: flex;
+      p {
+        color: #3a3b3f;
+        font-family: Roboto-Medium;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        letter-spacing: -0.05px;
+        line-height: 20px;
+        padding-right: 9px;
+      }
+      img {
+        cursor: pointer;
+        height: 6px;
+      }
+    }
+  }
+  .last-side-progressBar {
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    padding: 9px 15px 0 0;
+    h4 {
+      color: #1070ca;
+      font-family: Roboto-Medium;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      letter-spacing: -0.05px;
+      line-height: 20px;
+      padding-right: 9px;
+    }
+    img {
+      cursor: pointer;
+      height: 10px;
+      width: 6px;
+    }
+  }
+  #progress-chart {
+    border-bottom: 1px solid #e4e7eb;
+    width: 100%;
+  }
+}
