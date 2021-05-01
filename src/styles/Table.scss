@@ -75,7 +75,15 @@
       }
     }
   }
+ 
   .MuiTableCell-body {
+    font-family: Roboto-Medium;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.05px;
+    color: #3a3b3f;
     img {
       padding-left: 25px;
       padding-right: 8px;
@@ -83,9 +91,43 @@
   }
   .MuiTableCell-alignRight {
     text-align: center !important;
-    color: #9ea0a5 ;
+    font-family: Roboto-Regular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.05px;
+    color: #9ea0a5;
+  }
+  .MuiTableCell-alignLeft {
+    font-family: Roboto-Regular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.05px;
+    color: #9ea0a5;
   }
   .MuiTableCell-head {
-    color: #3a3b3f;
+    font-family: Roboto-Regular;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 20px;
+letter-spacing: -0.05px;
+color: #3A3B3F;
+
   }
+  .MuiTablePagination-caption,
+  .MuiInputBase-input{
+    font-family: Roboto-Regular;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 14px;
+color: #000000;
+mix-blend-mode: normal;
+opacity: 0.54;
+  }
+
 }

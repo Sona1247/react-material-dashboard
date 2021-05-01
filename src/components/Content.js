@@ -3,7 +3,8 @@ import Cards from "./Cards";
 import Applications from "./Applications";
 import Tables from "./Tables";
 import Progressbar from "./Progressbar";
-import Donut from "./Donut"
+import Donut from "./Donut";
+import Footer from "./Footer";
 import "../styles/Content.scss"
 const Content = () => {
   return (
@@ -16,6 +17,9 @@ const Content = () => {
      <div className="apps-table">
      <Applications />
       <Tables />
+     </div>
+     <div className="footer">
+       <Footer />
      </div>
     </div>
   );

@@ -55,7 +55,7 @@ const rows = [
   
   createData('2346123555-25', "Sona Jabrailova", "04/28/2018", [<img src={tableOval2} alt=""/>,'Delivered'], [<img src={moreIcon} alt=""/>,<img src={editIcon} alt=""/> ]),
   createData('23412355-21', "Rahil Aliyev", "04/28/2018",  [<img src={tableOval1} alt=""/>,'Delivered'], [<img src={moreIcon} alt=""/>,<img src={editIcon} alt=""/> ]),
-  createData('234123355-23',"Ali Aliyev", "04/28/2018", [<img src={tableOval2} alt=""/>,'Pending'], [<img src={moreIcon} alt=""/>,<img src={editIcon} alt=""/> ]),
+  createData('234123355-23',"Ali Qasimzadeh", "04/28/2018", [<img src={tableOval2} alt=""/>,'Pending'], [<img src={moreIcon} alt=""/>,<img src={editIcon} alt=""/> ]),
 ];
 
 const useStyles = makeStyles({

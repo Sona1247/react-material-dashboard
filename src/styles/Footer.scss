@@ -1,0 +1,25 @@
+.footer-side {
+  display: flex;
+  flex-direction: column;
+  padding: 16px 0 0 0;
+  margin: 19px 30px 54px 20px;
+  border-top: 1px solid #DFE3E8;
+  h3{
+    font-family: Roboto-Regular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    color: #616161;
+  }
+  p{
+    font-family: Roboto-Regular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+    color: #6B6C6F;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+  }
+}
