@@ -1,9 +1,10 @@
 import React, { useEffect } from "react";
 import Navbar from "./components/Navbar";
+import Main2 from "./components/Main2";
 import "../src/styles/App.scss";
 import axios from "axios";
 import Main from "./components/Main";
-import { BrowserRouter as Router } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 const App = () => {
   useEffect(() => {
@@ -15,9 +16,17 @@ const App = () => {
   return (
     <Router>
       <div className="App">
-        <Navbar />
+        <Switch>
+          <Route path="/Dashboard">
+            <Navbar />
 
-        <Main />
+            <Main />
+          </Route>
+          <Route path="/Users">
+            <Navbar />
+            <Main2 />
+          </Route>
+        </Switch>
       </div>
     </Router>
   );
