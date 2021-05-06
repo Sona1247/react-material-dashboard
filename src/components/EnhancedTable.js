@@ -1,5 +1,5 @@
-import React from "react";
-import tableAvatar from "../images/tableAvatar.png"
+import React,{useState} from "react";
+import tableAvatar from "../images/tableAvatarPhoto.png";
 import "../styles/EnhancedTable.scss";
 import PropTypes from 'prop-types';
 import clsx from 'clsx';
@@ -26,16 +26,16 @@ function createData(name, id, number, email, date) {
 }
 
 const rows = [
-  createData('Adam Denisov', "DEV63016762", "1-(618)312-3065", "rsnyder@blogspan.gov", "04/28/2018"),
-  createData('Alexa Richardson', "DEV08801335", "7-(648)993-5934", "belliott@youspan.mil", "04/28/2018"),
-  createData('Anje Keizer', "DEV04380234", "3-(459)237-2205","jfox@voolith.mil", "04/28/2018"),
-  createData('Ava Gregoraci', "DEV61057555","9-(091)354-5499", "kmartinez@dabtype.net", "04/28/2018"),
-  createData('Cao Yu', "DEV72600260", "4-(590)461-3734","rdixon@wikido.mil", "04/28/2018"),
-  createData('Clarke Gillebert', "DEV11328418", "3-(953)597-3248", "afrazier@wikibox.net", "04/28/2018"),
-  createData('Ekaterina Tankova', "DEV64472655","6-(454)703-8507","jrose@kare.mil","04/28/2018"),
-  createData('Emilee Simchenko', "DEV77035814","8-(607)046-4783","tortiz@meevee.mil", "04/28/2018"),
-  createData('Kwak Seong-Min', "DEV12604202", "9-(922)244-0106","kmccoy@yodoo.com", "04/28/2018"),
-  createData('Merrile Burgett', "DEV06628001","4-(218)673-9918", "thawkins@ntag.net", "04/28/2018"),
+  createData([ <img src={tableAvatar} alt="icon" /> ,"Adam Denisov"], "DEV63016762", "1-(618)312-3065", "rsnyder@blogspan.gov", "04/28/2018"),
+  createData([ <img src={tableAvatar} alt="icon" /> ,'Alexa Richardson'], "DEV08801335", "7-(648)993-5934", "belliott@youspan.mil", "04/28/2018"),
+  createData([ <img src={tableAvatar} alt="icon" /> ,'Anje Keizer'], "DEV04380234", "3-(459)237-2205","jfox@voolith.mil", "04/28/2018"),
+  createData([ <img src={tableAvatar} alt="icon" /> ,'Ava Gregoraci'], "DEV61057555","9-(091)354-5499", "kmartinez@dabtype.net", "04/28/2018"),
+  createData([ <img src={tableAvatar} alt="icon" /> ,'Cao Yu'], "DEV72600260", "4-(590)461-3734","rdixon@wikido.mil", "04/28/2018"),
+  createData([ <img src={tableAvatar} alt="icon" /> ,'Clarke Gillebert'], "DEV11328418", "3-(953)597-3248", "afrazier@wikibox.net", "04/28/2018"),
+  createData([ <img src={tableAvatar} alt="icon" /> ,'Ekaterina Tankova'], "DEV64472655","6-(454)703-8507","jrose@kare.mil","04/28/2018"),
+  createData([ <img src={tableAvatar} alt="icon" /> ,'Emilee Simchenko'], "DEV77035814","8-(607)046-4783","tortiz@meevee.mil", "04/28/2018"),
+  createData([ <img src={tableAvatar} alt="icon" /> ,'Kwak Seong-Min'], "DEV12604202", "9-(922)244-0106","kmccoy@yodoo.com", "04/28/2018"),
+  createData([ <img src={tableAvatar} alt="icon" /> ,'Merrile Burgett'], "DEV06628001","4-(218)673-9918", "thawkins@ntag.net", "04/28/2018"),
  ];
 
 function descendingComparator(a, b, orderBy) {
@@ -147,7 +147,7 @@ const useToolbarStyles = makeStyles((theme) => ({
 
 const EnhancedTableToolbar = (props) => {
   const classes = useToolbarStyles();
-  const { numSelected } = props;
+  const { numSelected,onDeletedChecked } = props;
 
   return (
     <Toolbar
@@ -163,7 +163,7 @@ const EnhancedTableToolbar = (props) => {
 
       {numSelected > 0 ? (
         <Tooltip title="Delete">
-          <IconButton aria-label="delete" color="primary">
+          <IconButton aria-label="delete" color="primary" onClick={onDeletedChecked}>
             <DeleteIcon />
           </IconButton>
         </Tooltip>
@@ -204,11 +204,11 @@ const useStyles = makeStyles((theme) => ({
 
 export default function EnhancedTable() {
   const classes = useStyles();
-  const [order, setOrder] = React.useState('asc');
-  const [orderBy, setOrderBy] = React.useState('');
-  const [selected, setSelected] = React.useState([]);
-  const [page, setPage] = React.useState(0);
-  const [dense, setDense] = React.useState(false);
+  const [order, setOrder] = useState('asc');
+  const [orderBy, setOrderBy] = useState('');
+  const [selected, setSelected] = useState([]);
+  const [page, setPage] = useState(0);
+  const [dense, setDense] = useState(false);
   const [rowsPerPage, setRowsPerPage] = React.useState(9);
 
   const handleRequestSort = (event, property) => {
@@ -219,19 +219,27 @@ export default function EnhancedTable() {
 
   const handleSelectAllClick = (event) => {
     if (event.target.checked) {
-      const newSelecteds = rows.map((n) => n.name);
+      const newSelecteds = rows.map((n) => n.email);
       setSelected(newSelecteds);
       return;
     }
     setSelected([]);
   };
+  const handleDeleteAllChecked =(event)=>{
+    if (event.target.checked){
+      const  newSelecteds = 0;
+      setSelected(newSelecteds);
+      return;
+    }
+    setSelected([]);
+  }
 
-  const handleClick = (event, name) => {
-    const selectedIndex = selected.indexOf(name);
+  const handleClick = (event, email) => {
+    const selectedIndex = selected.indexOf(email);
     let newSelected = [];
 
     if (selectedIndex === -1) {
-      newSelected = newSelected.concat(selected, name);
+      newSelected = newSelected.concat(selected, email);
     } else if (selectedIndex === 0) {
       newSelected = newSelected.concat(selected.slice(1));
     } else if (selectedIndex === selected.length - 1) {
@@ -255,9 +263,7 @@ export default function EnhancedTable() {
     setPage(0);
   };
 
-  const handleChangeDense = (event) => {
-    setDense(event.target.checked);
-  };
+  
 
   const isSelected = (name) => selected.indexOf(name) !== -1;
 
@@ -266,7 +272,7 @@ export default function EnhancedTable() {
   return (
     <div className={classes.root} id="enhanced-table">
       <Paper className={classes.paper}>
-        <EnhancedTableToolbar numSelected={selected.length} />
+        <EnhancedTableToolbar numSelected={selected.length} onDeletedChecked={handleDeleteAllChecked}/>
         <TableContainer>
           <Table
             className={classes.table}
@@ -280,7 +286,6 @@ export default function EnhancedTable() {
               numSelected={selected.length}
               order={order}
               orderBy={orderBy}
-              
               onSelectAllClick={handleSelectAllClick}
               onRequestSort={handleRequestSort}
               rowCount={rows.length}
@@ -289,18 +294,18 @@ export default function EnhancedTable() {
               {stableSort(rows, getComparator(order, orderBy))
                 .slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)
                 .map((row, index) => {
-                  const isItemSelected = isSelected(row.name);
+                  const isItemSelected = isSelected(row.email);
                   const labelId = `enhanced-table-checkbox-${index}`;
 
                   return (
                     <TableRow
                       hover
-                      onClick={(event) => handleClick(event, row.name)}
+                      onClick={(event) => handleClick(event, row.email)}
                       role="checkbox"
                       aria-checked={isItemSelected}
                       tabIndex={-1}
                       color="primary"
-                      key={row.name}
+                      key={row.email}
                       selected={isItemSelected}
                     >
                       <TableCell padding="checkbox">
@@ -311,7 +316,7 @@ export default function EnhancedTable() {
                         />
                       </TableCell>
                       <TableCell component="th" id={labelId} scope="row" padding="none">
-                        {row.name}
+                       <div className="tableAvatarPic"> {row.name}</div>
                       </TableCell>
                       <TableCell align="right">{row.id}</TableCell>
                       <TableCell align="right">{row.number}</TableCell>

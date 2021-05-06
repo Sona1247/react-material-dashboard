@@ -44,7 +44,7 @@ const Progressbar = () => {
           columnWidth: "27%",
           startingShape:"rounded",
           endingShape: "rounded",
-          borderRadius:4.5,
+         
         },
       },
       dataLabels: {

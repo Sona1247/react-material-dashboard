@@ -2,7 +2,7 @@ import {ALL_DATA} from "../actions/actionTypes";
 
 
 const initialState={
-   
+   data:undefined
 };
 
 
@@ -12,7 +12,8 @@ switch(action.type){
         return{...state,
             data:action.data
         }
-        default:return state
+        default:
+            return state;
 }
 }
 
