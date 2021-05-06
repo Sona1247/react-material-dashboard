@@ -18,10 +18,10 @@ const App = () => {
   const dispatch = useDispatch();
   useEffect(() => {
     axios
-      .get("https://heroku-hosting1.herokuapp.com/getData")
+      .get("http://heroku-hosting1.herokuapp.com/getData")
       .then((res) => dispatch(addData(res.data)))
       .catch((err) => console.log(err));
-  }, [dispatch]);
+  }, []);
 
   const data = useSelector((state) => state.allDataReducer);
   const route = useSelector((state) => state.linkDataReducer);
@@ -38,7 +38,7 @@ const App = () => {
             <Navbar />
             <Main2 />
           </Route>
-          <Redirect push to={route.key ? "/dashboard" : "/users"} />
+          <Redirect push to={route.key === 0 ? "/dashboard" : "/users"} />
         </Switch>
       </div>
     </Router>

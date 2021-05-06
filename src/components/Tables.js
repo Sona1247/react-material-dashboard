@@ -44,7 +44,11 @@ const columns = [
 function createData(name, code, population, size, density) {
   return { name, code, population, size, density };
 }
-
+// const rows = [
+//   createData(
+//     "Ali",'Sona','Rahil','Eldar','Orxan'
+//   )
+// ]
 const useStyles = makeStyles({
   root: {
     width: "100%",
@@ -55,13 +59,13 @@ const useStyles = makeStyles({
 });
 const Tables = (props) => {
   useEffect(() => {
-    console.log(props.table.data.tableFirstRow.firstId);
+    console.log(props.table);
   }, []);
 
   const rows = [
     createData(
       props.table.data.tableFirstRow.firstId,
-      props.table.data.tableFirstRow.firstName,
+      props.table.data.tableFirstRow.customerName,
       props.table.data.tableFirstRow.date,
       [<img src={tableOval1} alt="" />, props.table.data.tableFirstRow.status],
       [<img src={moreIcon} alt="" />, <img src={editIcon} alt="" />]
@@ -125,7 +129,7 @@ const Tables = (props) => {
       [<img src={tableOval2} alt="" />, props.table.data.tableNinethRow.status],
       [<img src={moreIcon} alt="" />, <img src={editIcon} alt="" />]
     ),
-  ];
+  ]
 
   const classes = useStyles();
   const [page, setPage] = useState(0);
