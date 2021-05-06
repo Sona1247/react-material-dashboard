@@ -18,7 +18,7 @@ const Content = () => {
       </div>
       <div className="apps-table">
         <Applications />
-        {data ? <Tables table={data} /> : ""}
+        {data.data ? <Tables table={data} /> : ""}
       </div>
       <div className="footer">
         <Footer />

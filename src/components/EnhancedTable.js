@@ -271,7 +271,9 @@ export default function EnhancedTable() {
 
   return (
     <div className={classes.root} id="enhanced-table">
-      <Paper className={classes.paper}>
+
+     <div className="email-table-size">
+     <Paper className={classes.paper}>
         <EnhancedTableToolbar numSelected={selected.length} onDeletedChecked={handleDeleteAllChecked}/>
         <TableContainer>
           <Table
@@ -343,6 +345,7 @@ export default function EnhancedTable() {
           onChangeRowsPerPage={handleChangeRowsPerPage}
         />
       </Paper>
+     </div>
       
     </div>
   );

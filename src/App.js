@@ -1,13 +1,15 @@
 import React, { useEffect } from "react";
 import { useSelector } from "react-redux";
 import "./styles/mediaQuerry.scss";
+import "./styles/mediaQuery2.scss";
 import Navbar from "./components/Navbar";
 import Main2 from "./components/Main2";
 import "../src/styles/App.scss";
+
 import { useDispatch } from "react-redux";
 import Main from "./components/Main";
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Switch,
   Route,
   Redirect,
@@ -29,13 +31,13 @@ const App = () => {
   return (
     <Router>
       <div className="App">
+      <Navbar />
         <Switch>
           <Route path="/dashboard">
-            <Navbar />
+          
             <Main data={data} />
           </Route>
           <Route path="/users">
-            <Navbar />
             <Main2 />
           </Route>
           <Redirect push to={route.key === 0 ? "/dashboard" : "/users"} />

@@ -1,17 +1,27 @@
-#enhanced-table{
-    padding: 0 24px 177px 17px;
-    .Mui-selected{
-        background: #F6F9FD;
+#enhanced-table {
+  padding: 0 24px 177px 17px;
+  width: 100%;
+  margin: 0 auto;
+
+  .Mui-selected {
+    background: #f6f9fd;
+  }
+  .email-table-size {
+    width: 100%;
+  
+  }
+  .tableRow {
+    display: flex;
+    align-items: center;
+    img {
+      padding-right: 12px;
     }
-.tableRow{
-    display: flex;align-items: center;
-    img{
-        padding-right: 12px;    }
-}
-.tableAvatarPic{
-    display: flex;align-items: center;
-    img{
-        padding-right: 12px;
+  }
+  .tableAvatarPic {
+    display: flex;
+    align-items: center;
+    img {
+      padding-right: 12px;
     }
-}
+  }
 }

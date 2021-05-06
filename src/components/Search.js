@@ -28,7 +28,10 @@ const Search = () => {
   }}
 />
             </div>
-            <button className="add"><img src={addIcon} alt="icon"/> <h2>Add User</h2></button>
+           <div className="search-content-buttons"> <button className="add"><img src={addIcon} alt="icon"/> <h2>Add User</h2></button>
+            <button className="filter-mob">
+                    <img src={filter} alt="icon"/>
+    <h2>FILTER</h2></button></div>
         </div>
     )
 }

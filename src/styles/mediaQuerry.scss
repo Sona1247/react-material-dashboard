@@ -85,20 +85,20 @@
     overflow-x: none;width: 100%;flex-direction: column;justify-content: center;
     align-items: center;
   }
-  body .main .content .all-cards .first-card,
-  body .main .content .all-cards .second-card,
- body .main .content .all-cards .third-card,
-  body .main .content .all-cards .fourth-card{
+  .main .content .all-cards .first-card,
+  .main .content .all-cards .second-card,
+  .main .content .all-cards .third-card,
+  .main .content .all-cards .fourth-card{
     width: 78%;
   }
-  body .main .content .all-cards .first-card{
+   .main .content .all-cards .first-card{
     margin-left: 0;
   }
-  body .main .content .all-cards .second-card{
+  .main .content .all-cards .second-card{
     margin: 21px 0 0 0;
   }
-  body .main .content .all-cards .third-card,
-  body .main .content .all-cards .fourth-card{
+   .main .content .all-cards .third-card,
+   .main .content .all-cards .fourth-card{
     margin-right: 0;
 
   }
@@ -107,18 +107,7 @@
 
 
 @media only screen and (max-width: 1050px) {
-  .main .content .all-cards{
-    overflow-x:auto;
-    width: 100%;
-    white-space: nowrap; 
-  }
- body .main .content .all-cards .first-card,
-body .main .content .all-cards .second-card,
- body .main .content .all-cards .third-card,
-  body .main .content .all-cards .fourth-card{
-    display:inline-block;
- 
-  }
+
 
   body .all-cards .second-card .card-text-content div h1,
         body .all-cards .first-card .card-text-content div h1,
@@ -207,12 +196,18 @@ padding-right: 11px;
           body .all-cards .fourth-card .fourth-card-text-content div h1{
               font-size: 21px;
           }
-    .all-cards .first-card,
-  .all-cards .second-card,
-  .all-cards .third-card,
-  .all-cards .fourth-card {
-    width: 32%;
-  }
+          .main .content .all-cards{
+            overflow-x:auto;
+            width: 100%;
+            white-space: nowrap; 
+          }
+         .content .all-cards .first-card,
+         .content .all-cards .second-card,
+         .content .all-cards .third-card,
+           .content .all-cards .fourth-card{
+            display:inline-block;
+         
+          }
   body .all-cards .second-card .card-value-content p,
   body .all-cards .first-card .card-value-content p
 {

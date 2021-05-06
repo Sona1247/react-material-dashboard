@@ -147,7 +147,7 @@ const Tables = (props) => {
   return (
     <div className="table-content">
       <div className="table-size">
-        {" "}
+      
         <div className="table-header">
           <div className="table-header-first-side">
             <h2 className="table-header-title">Latest Orders</h2>
