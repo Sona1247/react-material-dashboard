@@ -4,7 +4,9 @@ import navLogo from "../images/flex.png";
 import navButtonImage from "../images/button.png";
 import navIcon1 from "../images/icon1.png";
 import navIcon2 from "../images/icon2.png";
+import Burger from "./Burger";
 const Navbar = () => {
+  
   return (
     <div className="navbar-side">
       <div className="navbar-logo-link">
@@ -22,10 +24,17 @@ const Navbar = () => {
       </div>
       <div className="navbar-icons">
         <img src={navIcon1} alt="bell icon" />
-        <img src={navIcon2} alt="comp icon" />
+        <img src={navIcon2}  className="navbar-second-iconImage"alt="comp icon" />
+     <div className="navbar-burger-size">
+     <Burger />
+     </div>
       </div>
     </div>
   );
+  
 };
 
 export default Navbar;
+
+
+

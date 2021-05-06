@@ -5,6 +5,9 @@
   align-items: center;
   width: 100%;
   padding: 24px 27px 33px 24px;
+
+   
+
   .add {
     display: flex;
     align-items: center;
@@ -87,13 +90,15 @@ img{
       height: 32px;
       padding-left: 0;
       background: #ffffff;
-      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14),
-        0px 2px 1px rgba(0, 0, 0, 0.12), 0px 1px 3px rgba(0, 0, 0, 0.2);
+      box-shadow: 0px 0px 0px #E4E7EB;
       outline: none !important;
      
       button {
         padding: 4px 14px;
       }
+    }
+    fieldset{
+      border: none !important;
     }
   }
 }

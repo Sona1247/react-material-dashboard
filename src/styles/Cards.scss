@@ -31,6 +31,17 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      .first-card-main-image{
+        background:#EC4C47;
+        border-radius: 50%;
+        width: 64px;
+        height: 64px;
+        justify-content:center;align-items:center;
+        img{
+          width: 28px;
+          height:28px;
+        }
+      }
 .second-card-main-image{
   background:#47B881;
   border-radius: 50%;
@@ -143,6 +154,9 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        img{
+          width: 48px;
+        }
         div{
             display: flex;
             flex-direction: column;

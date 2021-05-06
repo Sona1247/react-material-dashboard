@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/Cards.scss";
 import CardImage1 from "../images/CardImage1.png";
+import overPicture3 from "../images/cardIconfirst.png";
 import overPicture1 from "../images/overPicture1.png";
 import overPicture2 from "../images/overPicture2.png";
 import CardImage2 from "../images/CardImage2.png";
@@ -17,7 +18,10 @@ const Cards = () => {
             <h3>BUDGET</h3>
             <h1>$24,000</h1>
           </div>
-          <img src={CardImage1} alt="cardImage" />
+          <div className="first-card-main-image">
+<img className="card-over-picture1" src={overPicture3} alt="over"/>
+
+</div>
         </div>
         <div className="card-value-content">
           <img src={CardImage2} alt="cardImage" />

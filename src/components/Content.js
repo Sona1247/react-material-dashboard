@@ -7,6 +7,8 @@ import Donut from "./Donut";
 import Footer from "./Footer";
 import "../styles/Content.scss"
 const Content = () => {
+
+ 
   return (
     <div className="content">
       <Cards />
@@ -16,7 +18,7 @@ const Content = () => {
       </div>
      <div className="apps-table">
      <Applications />
-      <Tables />
+      <Tables  />
      </div>
      <div className="footer">
        <Footer />

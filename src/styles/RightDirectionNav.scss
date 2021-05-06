@@ -1,0 +1,25 @@
+.all-menu-links {
+  display: flex;
+  flex-direction: column;
+  padding-top: 200px;
+  align-items: center;
+  text-align: left;
+}
+.navLinks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 18px;
+
+}
+.subNavLinks {
+  display: flex;
+  height: 40px;width: 180px;
+  align-items: center;
+  justify-content: center;
+  a {
+    padding-left: 10px;
+    color: white;
+    text-decoration: none;
+  }
+}

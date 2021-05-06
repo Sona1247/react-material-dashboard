@@ -2,6 +2,7 @@
 
 .sidebar {
   align-items: flex-start;
+
   background: #ffffff;
   border: 1px solid rgba(63, 63, 68, 0.005);
   box-shadow: 0px 1px 0px rgba(63, 63, 68, 0.05),
@@ -23,7 +24,7 @@
     h5 {
       margin: 16px 0 0 0;
     }
-    p{
+    p {
       margin-bottom: 0;
     }
   }
@@ -32,64 +33,67 @@
     display: flex;
     flex-direction: column;
     padding-top: 24px;
-    .sidebar-support-side{
+    .sidebar-support-side {
+      align-items: flex-start;
+      // padding: 13px;
+      border-top: 1px solid #e4e7eb;
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items: flex-start;
-      // padding: 13px;
-      border-top: 1px solid  #E4E7EB;
-      h4{
-        margin: 24px 0 8px 0;
+      h4 {
+        color: rgba(0, 0, 0, 0.328974);
         font-family: Roboto-Medium;
-font-style: normal;
-font-weight: 500;
-font-size: 13px;
-line-height: 15px;
-color: rgba(0, 0, 0, 0.328974);
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 15px;
+        margin: 24px 0 8px 0;
       }
-      .supportLink{
+      .supportLink {
+        align-items: center;
         display: flex;
         justify-content: flex-start;
-        align-items: center;
         padding: 13px;
         width: 236px;
-        &:hover{
+        &:hover {
           background: #f6f9fd;
           border-radius: 4px;
           box-shadow: inset 3px 0px 0px #1665d8;
         }
-        img{
-          cursor: pointer;
-          rect{
-          &:hover{
-            fill: #3F51B5;
-          }}
-        }
-        .support{
+        .support {
+          color: #66788a;
+          font-family: Roboto-Medium;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 500;
+          letter-spacing: -0.05px;
+          line-height: 20px;
           padding-left: 10px;
           text-decoration: none;
-          font-family: Roboto-Medium;
-font-style: normal;
-font-weight: 500;
-font-size: 14px;
-line-height: 20px;
-letter-spacing: -0.05px;
-color: #66788A;
-&:hover{
-  color: #212529;
-}
+          &:hover {
+            color: #212529;
+          }
         }
       }
     }
     .navLinks {
-      &:nth-child(6){
+      cursor: pointer;
+      &:nth-child(6) {
         margin-bottom: 16px;
       }
       &:hover {
         background: #f6f9fd;
         border-radius: 4px;
         box-shadow: inset 3px 0px 0px #1665d8;
+        
+        .list{
+          color: #212529;
+        }
+        svg {
+          rect {
+            fill: #3f51b5;
+          }
+        }
       }
 
       .list {
@@ -102,11 +106,8 @@ color: #66788A;
         line-height: 20px;
         padding-left: 10px;
         text-decoration: none;
-        &:hover{
-color: #212529;
-        }
+        
       }
-      
     }
     .subNavLinks {
       align-items: center;
@@ -114,12 +115,13 @@ color: #212529;
       justify-content: flex-start;
       padding: 13px;
       width: 236px;
-      img{
+      img {
         cursor: pointer;
-        rect{
-        &:hover{
-          fill: #3F51B5;
-        }}
+        rect {
+          &:hover {
+            fill: #3f51b5;
+          }
+        }
       }
     }
   }
