@@ -33,3 +33,7 @@ $lightBackgroundColor:#f6f9fd;
     justify-content: $horizontal;
     align-items: $align;
   }
+  @mixin styleTag($color,$fontFamily,$fontSize,$letterSpace){
+      color:$color,
+
+  }

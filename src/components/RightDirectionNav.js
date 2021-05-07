@@ -3,7 +3,7 @@ import styled from "styled-components";
 import "../styles/RightDirectionNav.scss";
 import { useDispatch, useSelector } from "react-redux";
 import { changeLink } from "../redux/actions/action";
-import "../styles/Sidebar.scss";
+
 import { NavLink } from "react-router-dom";
 
 const Ul = styled.ul`
