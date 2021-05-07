@@ -37,10 +37,10 @@ export default function RightDirectionNav({ open }) {
   const listKey = useSelector((state) => state.linkDataReducer);
   const linkClick = (key) => {
     dispatch(changeLink(key));
-    document.querySelector(".sc-gtsrHT").classList.remove("dpkqfm")
-    document.querySelector(".sc-bdnxRM").classList.add("gEseQU")
-    document.querySelector(".sc-bdnxRM").classList.remove("fuRgLU")
-    document.querySelector(".sc-gtsrHT").classList.add("fXvcEa")
+    // document.querySelector(".sc-gtsrHT").classList.remove("dpkqfm")
+    // document.querySelector(".sc-bdnxRM").classList.add("gEseQU")
+    // document.querySelector(".sc-bdnxRM").classList.remove("fuRgLU")
+    // document.querySelector(".sc-gtsrHT").classList.add("fXvcEa")
     document.querySelector(".sc-gtsrHT").classList.remove("fzGQbW")
     document.querySelector(".sc-bdnxRM").classList.add("ctYbLy")
   
