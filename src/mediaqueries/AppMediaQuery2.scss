@@ -1,0 +1,24 @@
+@media only screen and (max-width: 850px) {
+  .App .main2 .sidebar {
+    display: none;
+  }
+  .App .main2 .content2 {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1130px) {
+  .main2 .content2 {
+    width: 80%;
+  }
+  .main2 .sidebar {
+    width: 20%;
+  }
+
+  .main2 .content2 .footer-side h3 {
+    font-size: 12px;
+  }
+  .main2 .content2 .footer-side p {
+    font-size: 10px;
+  }
+}

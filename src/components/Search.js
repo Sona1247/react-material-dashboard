@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import "../styles/Search.scss";
 import addIcon from "../images/add.png";
 import filter from "../images/filter.png";

@@ -1,7 +1,7 @@
 import React,{useEffect} from "react";
 import {useSelector} from "react-redux";
 import "../styles/Cards.scss";
-import CardImage1 from "../images/CardImage1.png";
+import "../mediaqueries/CardsMediaquery.scss";
 import overPicture3 from "../images/cardIconfirst.png";
 import overPicture1 from "../images/overPicture1.png";
 import overPicture2 from "../images/overPicture2.png";

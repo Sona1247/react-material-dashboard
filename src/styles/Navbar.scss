@@ -1,4 +1,5 @@
 @import "fonts.scss";
+@import "./variables";
 
 * {
   box-sizing: border-box;
@@ -8,7 +9,7 @@
 
 .navbar-side {
   align-items: center;
-  background: #3f51b5;
+  background: $rectColor;
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -23,7 +24,7 @@
       justify-content: center;
       padding: 14px 0 14px 14px;
       h3 {
-        color: #ffffff;
+        color: $whiteTone;
         font-family: Roboto-Medium;
         font-size: 20px;
         font-style: normal;
@@ -35,7 +36,7 @@
     }
     .navbar-link {
       align-items: center;
-      background: rgba(51, 51, 51, 0.2);
+      background: $darkBackground;
 
       border-radius: 5px;
       display: flex;
@@ -46,7 +47,7 @@
       position: relative;
 
       p {
-        color: #cdd1ea;
+        color: $subtitleWhiteColor;
         font-family: Roboto-Regular;
         font-size: 14px;
         font-style: normal;
@@ -56,15 +57,15 @@
         margin-left: 14px;
       }
       a {
-        color: #ffffff;
+        text-decoration: none;
+        color: $whiteTone;
         font-family: Roboto-Regular;
         font-size: 14px;
         font-style: normal;
         font-weight: normal;
         line-height: 16px;
       }
-      img {
-      }
+      
     }
   }
 

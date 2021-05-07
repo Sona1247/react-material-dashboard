@@ -1,3 +1,6 @@
+@import "fonts.scss";
+@import "./variables";
+
 .all-menu-links {
   align-items: center;
   display: flex;
@@ -18,7 +21,7 @@
   justify-content: center;
   width: 180px;
   a {
-    color: white;
+    color: $whiteTone;
     padding-left: 10px;
     text-decoration: none;
   }

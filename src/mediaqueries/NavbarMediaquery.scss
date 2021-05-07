@@ -1,0 +1,17 @@
+@media only screen and (max-width: 1050px) {
+  body .navbar-side .navbar-logo-link .navbar-logo h3 {
+    font-size: 20.7px;
+  }
+  body .navbar-side .navbar-logo-link .navbar-link {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1450px) {
+  body .navbar-side .navbar-logo-link .navbar-logo h3 {
+    font-size: 14.7px;
+  }
+  .App .navbar-side .navbar-icons img {
+    padding-right: 11px;
+  }
+}

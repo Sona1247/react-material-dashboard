@@ -1,5 +1,6 @@
 import React from 'react'
 import "../styles/Applications.scss"
+import "../mediaqueries/ApplicationsMediaquery.scss"
 import SlackLogo from "../images/slackLogo.png"
 import firstApp from "../images/firstApp.png"
 import secondApp from "../images/secondApp.png"

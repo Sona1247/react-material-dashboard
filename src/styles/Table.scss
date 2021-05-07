@@ -1,4 +1,5 @@
 @import "fonts.scss";
+@import "./variables";
 .table-content {
   align-items: center;
   display: flex;
@@ -11,11 +12,11 @@
   }
   .table-header {
     align-items: center;
-    background: #ffffff;
-    border: 1px solid rgba(63, 63, 68, 0.005);
+    background: $whiteTone;
+    border: 1px solid $blackBorderColor;
     border-radius: 4px 0 0 0;
-    box-shadow: 0px 1px 0px rgba(63, 63, 68, 0.05),
-      0px 1px 3px rgba(63, 63, 68, 0.15);
+    box-shadow: 0px 1px 0px $shadowdarkBlackTone,
+      0px 1px 3px $shadowlightBlackTone;
     display: flex;
     justify-content: space-between;
     padding: 24px 24px 42px 27px;
@@ -25,7 +26,7 @@
       display: flex;
       justify-content: center;
       .table-header-title {
-        color: #3a3b3f;
+        color: $grayFirstTone;
         font-family: Roboto-Medium;
         font-size: 16px;
         font-style: normal;
@@ -34,7 +35,7 @@
         line-height: 20px;
       }
       .table-header-value {
-        color: #9ea0a5;
+        color: $graySecondTone;
         font-family: Roboto-Regular;
         font-size: 12px;
         font-style: normal;
@@ -48,7 +49,7 @@
       display: flex;
       justify-content: center;
       .table-header-subtitle {
-        color: #3a3b3f;
+        color: $grayFirstTone;
         font-family: Roboto-Medium;
         font-size: 14px;
         font-style: normal;
@@ -62,8 +63,8 @@
         padding: 0 30px 0 15px;
       }
       .table-button {
-        border: 1px solid #d4e6ff;
-        color: #1665d8;
+        border: 1px solid $darkWhiteTone;
+        color: $blueLightTone;
         cursor: pointer;
         font-family: Roboto-Medium;
         font-size: 14px;
@@ -79,7 +80,7 @@
   }
   td:nth-child(1) {
 
-    color: #3a3b3f;
+    color: $grayFirstTone;
     font-family: Roboto-Regular;
     font-size: 14px;
     font-style: normal;
@@ -89,7 +90,7 @@
   }
 
   .MuiTableCell-body {
-    color: #3a3b3f;
+    color: $grayFirstTone;
     font-family: Roboto-Medium;
     font-size: 14px;
     font-style: normal;
@@ -103,7 +104,7 @@
     }
   }
   .MuiTableCell-alignRight {
-    color: #9ea0a5;
+    color: $graySecondTone;
     font-family: Roboto-Regular;
     font-size: 14px;
     font-style: normal;
@@ -113,7 +114,7 @@
     text-align: center !important;
   }
   .MuiTableCell-alignLeft {
-    color: #9ea0a5;
+    color: $graySecondTone;
     font-family: Roboto-Regular;
     font-size: 14px;
     font-style: normal;
@@ -122,7 +123,7 @@
     line-height: 20px;
   }
   .MuiTableCell-head {
-    color: #3a3b3f;
+    color: $grayFirstTone;
     font-family: Roboto-Regular;
     font-size: 14px;
     font-style: normal;
@@ -132,7 +133,7 @@
   }
   .MuiTablePagination-caption,
   .MuiInputBase-input {
-    color: #000000;
+    color: $blackTone;
     font-family: Roboto-Regular;
     font-size: 12px;
     font-style: normal;

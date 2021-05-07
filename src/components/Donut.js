@@ -7,6 +7,7 @@ import fourthChartIcon from "../images/fourthChartIcon.png";
 import firstDirection from "../images/grayIcon.png";
 import secondDirection from "../images/blueIcon.png";
 import "../styles/Donut.scss";
+import "../mediaqueries/ChartMediaquery.scss";
 const Donut = () => {
   const [options] = useState({
     series: [63, 22, 15],

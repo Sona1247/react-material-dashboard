@@ -1,11 +1,11 @@
 @import "fonts.scss";
-
+@import "./variables";
 .all-applications {
-  background: #ffffff;
-  border: 1px solid rgba(63, 63, 68, 0.005);
+  background: $whiteTone;
+  border: 1px solid $blackBorderColor;
   border-radius: 4px;
-  box-shadow: 0px 1px 0px rgba(63, 63, 68, 0.05),
-    0px 1px 3px rgba(63, 63, 68, 0.15);
+  box-shadow: 0px 1px 0px $shadowdarkBlackTone,
+    0px 1px 3px $shadowlightBlackTone;
   display: flex;
   flex-direction: column;
   height: 517px;
@@ -18,7 +18,7 @@
     justify-content: flex-end;
     padding-top: 8px;
     .view {
-      color: #1070ca;
+      color: $blueTone;
       font-family: Roboto-Medium;
       font-size: 14px;
       font-style: normal;
@@ -41,7 +41,7 @@
     display: flex;
     justify-content: flex-start;
     .product-title {
-      color: #3a3b3f;
+      color: $grayFirstTone;
       font-family: Roboto-Medium;
       font-size: 16px;
       font-style: normal;
@@ -51,7 +51,7 @@
       margin-bottom: 0;
     }
     .product-total {
-      color: #9ea0a5;
+      color: $graySecondTone;
       font-family: Roboto-Regular;
       font-size: 12px;
       font-style: normal;
@@ -63,7 +63,7 @@
   }
   .applications {
     align-items: center;
-    border-bottom: 1px solid #e4e7eb;
+    border-bottom: 1px solid $borderColor;
     display: flex;
     justify-content: space-between;
     margin-top: 25px;
@@ -83,7 +83,7 @@
       .applications-content {
         margin-left: 32px;
         .title {
-          color: #3a3b3f;
+          color: $grayFirstTone;
           font-family: Roboto-Medium;
           font-size: 16px;
           font-style: normal;
@@ -92,7 +92,7 @@
           line-height: 20px;
         }
         .subtitle {
-          color: #9ea0a5;
+          color: $graySecondTone;
           font-family: Roboto-Regular;
           font-size: 12px;
           font-style: normal;

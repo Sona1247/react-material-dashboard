@@ -1,0 +1,36 @@
+@media only screen and (max-width: 850px) {
+  body .main .sidebar {
+    display: none;
+  }
+  body .App .content {
+    width: 100%;
+  }
+  body .main .content .footer-side p {
+    font-size: 8.6px;
+  }
+}
+
+@media only screen and (max-width: 1050px) {
+  .main .content .footer-side h3 {
+    font-size: 12px;
+  }
+  .main .content .footer-side p {
+    font-size: 10px;
+  }
+}
+
+@media only screen and (max-width: 1450px) {
+  .content .footer-side h3 {
+    font-size: 13px;
+  }
+  .content .footer-side p {
+    font-size: 11px;
+  }
+
+  .main .sidebar {
+    width: 20%;
+  }
+  .main .content {
+    width: 80%;
+  }
+}

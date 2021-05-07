@@ -1,0 +1,46 @@
+@media only screen and (max-width: 550px) {
+    .charts
+    .chart-all-content
+    .chart-content-container
+    .chart-content
+    .chart-value {
+    font-size: 18px;
+  }
+  .charts .chart-all-content .chart-header .chart-header-title {
+    font-size: 12px;
+  }
+  .charts .chart-all-content .chart-header .chart-header-icon {
+    height: 13px;
+  }
+  .charts .chart-all-content .chart-last-side .first-side p {
+    font-size: 10px;
+  }
+  .charts .chart-all-content .chart-last-side .second-side p {
+    font-size: 11px;
+  }
+  .main .content .charts .chart-all-content {
+    height: 70%;
+  }
+}
+@media only screen and (max-width: 850px) {
+    .main .content .charts {
+        flex-direction: column;
+        width: 100%;
+      }
+      .main .content .charts .all-progressbar-content {
+        margin-bottom: 16px;
+        width: 100%;
+      }
+      .main .content .charts .chart-all-content {
+        margin: 0 auto;
+        width: 95%;
+      }
+}
+@media only screen and (max-width: 1450px) {
+    .charts .all-progressbar-content {
+        width: 59%;
+      }
+      .charts .chart-all-content {
+        width: 39%;
+      }
+}

@@ -1,7 +1,8 @@
 import React, { useEffect } from "react";
 import { useSelector } from "react-redux";
-import "./styles/mediaQuerry.scss";
-import "./styles/mediaQuery2.scss";
+import "./mediaqueries/AppMediaquery.scss";
+import "./mediaqueries/AppMediaQuery2.scss";
+import "./mediaqueries/SearchMediauqery.scss";
 import Navbar from "./components/Navbar";
 import Main2 from "./components/Main2";
 import "../src/styles/App.scss";

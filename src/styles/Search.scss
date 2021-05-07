@@ -1,4 +1,5 @@
 @import "fonts.scss";
+@import "./variables";
 .search-content {
   align-items: center;
   display: flex;
@@ -11,18 +12,18 @@
     justify-content: center;
     .filter-mob {
       align-items: center;
-      background: #ffffff;
+      background: $whiteTone;
       border: none;
       border-radius: 4px;
-      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14),
-        0px 2px 1px rgba(0, 0, 0, 0.12), 0px 1px 3px rgba(0, 0, 0, 0.2);
+      box-shadow: 0px 1px 1px $shadowDarkColor,
+        0px 2px 1px $boxShadowColor, 0px 1px 3px $darkboxShadowColor;
       cursor: pointer;
       display: none;
       outline: none;
 
       padding: 8px 22px;
       h2 {
-        color: #3a3b3f;
+        color: $grayFirstTone;
         font-family: Roboto-Medium;
         font-size: 14px;
         font-style: normal;
@@ -39,17 +40,17 @@
 
     .add {
       align-items: center;
-      background: #1665d8;
+      background: $blueLightTone;
       border: none;
       border-radius: 4px;
-      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14),
-        0px 2px 1px rgba(0, 0, 0, 0.12), 0px 1px 3px rgba(0, 0, 0, 0.2);
+      box-shadow: 0px 1px 1px $shadowDarkColor,
+        0px 2px 1px $boxShadowColor, 0px 1px 3px $darkboxShadowColor;
       cursor: pointer;
       display: flex;
       outline: none;
       padding: 10px 16px;
       h2 {
-        color: #ffffff;
+        color: $whiteTone;
         font-family: Roboto-Medium;
         font-size: 14px;
         font-style: normal;
@@ -82,18 +83,18 @@
     }
     .filter {
       align-items: center;
-      background: #ffffff;
+      background: $whiteTone;
       border: none;
       border-radius: 4px;
-      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14),
-        0px 2px 1px rgba(0, 0, 0, 0.12), 0px 1px 3px rgba(0, 0, 0, 0.2);
+      box-shadow: 0px 1px 1px $shadowDarkColor,
+        0px 2px 1px $boxShadowColor, 0px 1px 3px $darkboxShadowColor;
       cursor: pointer;
       display: flex;
       margin-right: 28px;
       outline: none;
       padding: 8px 22px;
       h2 {
-        color: #3a3b3f;
+        color: $grayFirstTone;
         font-family: Roboto-Medium;
         font-size: 14px;
         font-style: normal;
@@ -112,7 +113,7 @@
       padding: 12.5px 0;
     }
     input::placeholder {
-      color: #9ea0a5;
+      color: $graySecondTone;
       font-family: Roboto-Regular;
       font-size: 14px;
       font-style: normal;
@@ -121,8 +122,8 @@
       line-height: 16px;
     }
     .MuiOutlinedInput-adornedStart {
-      background: #ffffff;
-      box-shadow: 0px 0px 0px #e4e7eb;
+      background: $whiteTone;
+      box-shadow: 0px 0px 0px $borderColor;
       height: 32px;
       outline: none !important;
       padding-left: 0;

@@ -1,0 +1,54 @@
+@media only screen and (max-width: 550px) {
+  body .App .apps-table .table-content {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1450px) {
+  .apps-table
+    .table-content
+    .table-header
+    .table-header-first-side
+    .table-header-title {
+    font-size: 12px;
+  }
+  .apps-table
+    .table-content
+    .table-header
+    .table-header-first-side
+    .table-header-value {
+    font-size: 11px;
+  }
+  .apps-table
+    .table-content
+    .table-header
+    .table-header-second-side
+    .table-header-subtitle {
+    font-size: 12px;
+  }
+  .apps-table
+    .table-content
+    .table-header
+    .table-header-second-side
+    .table-direction {
+    height: 4px;
+    padding-left: 10px;
+  }
+  .apps-table
+    .table-content
+    .table-header
+    .table-header-second-side
+    .table-button {
+    font-size: 12px;
+    padding: 5px 11px;
+  }
+  .content .apps-table {
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 80%;
+  }
+  body .apps-table .table-content {
+    width: 50%;
+  }
+}

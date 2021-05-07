@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/Navbar.scss";
+import "../mediaqueries/NavbarMediaquery.scss";
 import navLogo from "../images/flex.png";
 import navButtonImage from "../images/button.png";
 import navIcon1 from "../images/icon1.png";
@@ -18,7 +19,7 @@ const Navbar = () => {
           <img src={navButtonImage} alt="button text" />
           <p>
             See our PRO version for more design components & coded in React
-            follow this link: <a>https://devias.io/products/devias-kit-pro</a>
+            follow this link: <a href="/">https://devias.io/products/devias-kit-pro</a>
           </p>
         </div>
       </div>

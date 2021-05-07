@@ -1,11 +1,13 @@
+@import "./variables";
+@import "fonts.scss";
 .footer-side {
-  border-top: 1px solid #dfe3e8;
+  border-top: 1px solid $borderWhiteTone;
   display: flex;
   flex-direction: column;
   margin: 19px 30px 54px 20px;
   padding: 16px 0 0 0;
   h3 {
-    color: #616161;
+    color: $grayTitleColor;
     font-family: Roboto-Regular;
     font-size: 14px;
     font-style: normal;
@@ -13,7 +15,7 @@
     line-height: 22px;
   }
   p {
-    color: #6b6c6f;
+    color: $graySubtitleColor;
     font-family: Roboto-Regular;
     font-size: 12px;
     font-style: normal;

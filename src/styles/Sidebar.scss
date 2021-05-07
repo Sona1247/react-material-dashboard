@@ -1,11 +1,12 @@
 @import "fonts.scss";
+@import "./variables";
 
 .sidebar {
   align-items: flex-start;
-  background: #ffffff;
-  border: 1px solid rgba(63, 63, 68, 0.005);
-  box-shadow: 0px 1px 0px rgba(63, 63, 68, 0.05),
-    0px 1px 3px rgba(63, 63, 68, 0.15);
+  background: $whiteTone;
+  border: 1px solid $blackBorderColor;
+  box-shadow: 0px 1px 0px $shadowdarkBlackTone,
+    0px 1px 3px $shadowlightBlackTone;
   display: flex;
   flex-direction: column;
   height: 1016px;
@@ -14,7 +15,7 @@
   width: 270px;
   .avatar {
     align-items: center;
-    border-bottom: 1px solid #e4e7eb;
+    border-bottom: 1px solid $borderColor;
     display: flex;
     flex-direction: column;
     height: 170px;
@@ -35,12 +36,12 @@
     .sidebar-support-side {
       align-items: flex-start;
       // padding: 13px;
-      border-top: 1px solid #e4e7eb;
+      border-top: 1px solid $borderColor;
       display: flex;
       flex-direction: column;
       justify-content: center;
       h4 {
-        color: rgba(0, 0, 0, 0.328974);
+        color: $textBlackTone;
         font-family: Roboto-Medium;
         font-size: 13px;
         font-style: normal;
@@ -55,12 +56,12 @@
         padding: 13px;
         width: 236px;
         &:hover {
-          background: #f6f9fd;
+          background: $lightBackgroundColor;
           border-radius: 4px;
-          box-shadow: inset 3px 0px 0px #1665d8;
+          box-shadow: inset 3px 0px 0px $blueLightTone;
         }
         .support {
-          color: #66788a;
+          color: $normalGrayTone;
           font-family: Roboto-Medium;
           font-size: 14px;
           font-style: normal;
@@ -70,7 +71,7 @@
           padding-left: 10px;
           text-decoration: none;
           &:hover {
-            color: #212529;
+            color: $lightBlackTone;
           }
         }
       }
@@ -81,22 +82,22 @@
         margin-bottom: 16px;
       }
       &:hover {
-        background: #f6f9fd;
+        background: $lightBackgroundColor;
         border-radius: 4px;
-        box-shadow: inset 3px 0px 0px #1665d8;
+        box-shadow: inset 3px 0px 0px $blueLightTone;
 
         .list {
-          color: #212529;
+          color: $lightBlackTone;
         }
         svg {
           rect {
-            fill: #3f51b5;
+            fill: $rectColor;
           }
         }
       }
 
       .list {
-        color: #66788a;
+        color: $normalGrayTone;
         font-family: Roboto-Medium;
         font-size: 14px;
         font-style: normal;
@@ -117,7 +118,7 @@
         cursor: pointer;
         rect {
           &:hover {
-            fill: #3f51b5;
+            fill: $rectColor;
           }
         }
       }

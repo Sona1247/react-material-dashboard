@@ -1,11 +1,12 @@
 @import "fonts.scss";
+@import "./variables";
 #enhanced-table {
   margin: 0 auto;
   padding: 0 24px 177px 17px;
   width: 100%;
   .MuiTablePagination-toolbar {
     .MuiSelect-select.MuiSelect-select {
-      color: #000000;
+      color: $blackTone;
       font-family: Roboto-Regular;
       font-size: 12px;
       font-style: normal;
@@ -17,13 +18,13 @@
     }
     .MuiTablePagination-actions {
       button {
-        color: #000000;
+        color: $blackTone;
         mix-blend-mode: normal;
         opacity: 0.54;
       }
     }
     p {
-      color: #000000;
+      color: $blackTone;
       font-family: Roboto-Regular;
       font-size: 12px;
       font-style: normal;
@@ -35,7 +36,7 @@
     }
   }
   .MuiTableRow-head {
-    color: #3a3b3f;
+    color: $grayFirstTone;
     font-family: Roboto;
     font-size: 14px;
     font-style: normal;
@@ -53,7 +54,7 @@
     }
   }
   .tableAvatarPic {
-    color: #3a3b3f;
+    color: $grayFirstTone;
     font-family: Roboto-Medium;
     font-size: 14px;
     font-style: normal;
@@ -64,7 +65,7 @@
   }
 
   td:nth-child(3) {
-    color: #3a3b3f;
+    color: $grayFirstTone;
     font-family: Roboto-Regular;
     font-size: 14px;
     font-style: normal;
@@ -74,7 +75,7 @@
     line-height: 20px;
   }
   td:nth-child(4) {
-    color: #3a3b3f;
+    color: $grayFirstTone;
 
     font-family: Roboto-Regular;
     font-size: 14px;
@@ -86,7 +87,7 @@
     text-align: left;
   }
   td:nth-child(5) {
-    color: #3a3b3f;
+    color: $grayFirstTone;
     font-family: Roboto-Regular;
     font-size: 14px;
     font-style: normal;
@@ -96,7 +97,7 @@
     line-height: 20px;
   }
   td:nth-child(6) {
-    color: #9ea0a5;
+    color: $graySecondTone;
     font-family: Roboto-Regular;
     font-size: 14px;
     font-style: normal;
@@ -106,7 +107,7 @@
     text-align: right;
   }
   .Mui-selected {
-    background: #f6f9fd;
+    background: $lightBackgroundColor;
   }
   .email-table-size {
     width: 100%;
