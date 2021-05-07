@@ -43,9 +43,10 @@ export default function RightDirectionNav({ open }) {
     // document.querySelector(".sc-gtsrHT").classList.add("fXvcEa")
     document.querySelector(".sc-gtsrHT").classList.remove("fzGQbW")
     document.querySelector(".sc-bdnxRM").classList.add("ctYbLy")
-  
+    document.querySelector(".sc-gtsrHT").classList.remove("ctYbLy")
     document.querySelector(".sc-bdnxRM").classList.remove("jmvFTq")
     document.querySelector(".sc-gtsrHT").classList.add("gAuIUi")
+    document.querySelector(".sc-bdnxRM").classList.remove("gAuIUi")
 
   
   };
