@@ -21,7 +21,7 @@ const App = () => {
   const dispatch = useDispatch();
   useEffect(() => {
     axios
-      .get("http://heroku-hosting1.herokuapp.com/getData")
+      .get("https://heroku-hosting1.herokuapp.com/getData")
       .then((res) => dispatch(addData(res.data)))
       .catch((err) => console.log(err));
   }, [dispatch]);
