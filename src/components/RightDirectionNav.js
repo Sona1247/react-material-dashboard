@@ -41,6 +41,11 @@ export default function RightDirectionNav({ open }) {
     document.querySelector(".sc-bdnxRM").classList.add("gEseQU")
     document.querySelector(".sc-bdnxRM").classList.remove("fuRgLU")
     document.querySelector(".sc-gtsrHT").classList.add("fXvcEa")
+    document.querySelector(".sc-bdnxRM").classList.add("fzGQbW")
+    document.querySelector(".sc-gtsrHT").classList.add("jmvFTq")
+    document.querySelector(".sc-gtsrHT").classList.remove("ctYbLy")
+    document.querySelector(".sc-bdnxRM").classList.remove("gAuIUi")
+  
   };
   const sidebarList = [
     {
