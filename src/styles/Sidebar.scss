@@ -2,24 +2,17 @@
 @import "./variables";
 
 .sidebar {
-
   background: $whiteTone;
   border: 1px solid $blackBorderColor;
   box-shadow: 0px 1px 0px $shadowdarkBlackTone,
     0px 1px 3px $shadowlightBlackTone;
-
   height: 1016px;
-
   padding: 0 16px;
-
   width: 270px;
   @include flexCenter(column, flex-start, flex-start);
   .avatar {
-
     border-bottom: 1px solid $borderColor;
-
     height: 170px;
-
     width: 100%;
     @include flexCenter(column, center, center);
     h5 {
@@ -29,29 +22,26 @@
       margin-bottom: 0;
     }
   }
-
   .side-NavLinks {
-
     padding-top: 24px;
-
     width: 100%;
     @include flexCenter(column, initial, initial);
     .sidebar-support-side {
-
       border-top: 1px solid $borderColor;
       @include flexCenter(column, center, flex-start);
-
       h4 {
-        color: $textBlackTone;
-        font-family: Roboto-Medium;
-        font-size: 13px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 15px;
         margin: 24px 0 8px 0;
+        @include styleTag(
+          $textBlackTone,
+          Roboto-Medium,
+          13px,
+          normal,
+          500,
+          initial,
+          15px
+        );
       }
       .supportLink {
-
         padding: 13px;
         width: 236px;
         @include flexCenter(row, flex-start, center);
@@ -61,15 +51,17 @@
           box-shadow: inset 3px 0px 0px $blueLightTone;
         }
         .support {
-          color: $normalGrayTone;
-          font-family: Roboto-Medium;
-          font-size: 14px;
-          font-style: normal;
-          font-weight: 500;
-          letter-spacing: -0.05px;
-          line-height: 20px;
           padding-left: 10px;
           text-decoration: none;
+          @include styleTag(
+            $normalGrayTone,
+            Roboto-Medium,
+            14px,
+            normal,
+            500,
+            -0.05px,
+            20px
+          );
           &:hover {
             color: $lightBlackTone;
           }
@@ -85,7 +77,6 @@
         background: $lightBackgroundColor;
         border-radius: 4px;
         box-shadow: inset 3px 0px 0px $blueLightTone;
-
         .list {
           color: $lightBlackTone;
         }
@@ -95,21 +86,21 @@
           }
         }
       }
-
       .list {
-        color: $normalGrayTone;
-        font-family: Roboto-Medium;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 500;
-        letter-spacing: -0.05px;
-        line-height: 20px;
         padding-left: 10px;
         text-decoration: none;
+        @include styleTag(
+          $normalGrayTone,
+          Roboto-Medium,
+          14px,
+          normal,
+          500,
+          -0.05px,
+          20px
+        );
       }
     }
     .subNavLinks {
-
       padding: 13px;
       width: 236px;
       @include flexCenter(row, flex-start, center);

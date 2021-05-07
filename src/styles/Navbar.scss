@@ -6,69 +6,65 @@
   margin: 0;
   padding: 0;
 }
-
 .navbar-side {
-
   background: $rectColor;
-
   width: 100%;
   @include flexCenter(row, space-between, center);
-
   .navbar-logo-link {
     @include flexCenter(row, initial, center);
-
     .navbar-logo {
-
       padding: 14px 0 14px 14px;
       @include flexCenter(row, center, center);
       h3 {
-        color: $whiteTone;
-        font-family: Roboto-Medium;
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 500;
-        letter-spacing: -0.0555556px;
-        line-height: 24px;
         padding-left: 8px;
+        @include styleTag(
+          $whiteTone,
+          Roboto-Medium,
+          20px,
+          normal,
+          500,
+          -0.0555556px,
+          24px
+        );
       }
     }
     .navbar-link {
-
       background: $darkBackground;
-
       border-radius: 5px;
-
       margin-left: 34px;
       padding: 5px;
       padding-left: 7px;
       position: relative;
       @include flexCenter(row, center, center);
-
       p {
-        color: $subtitleWhiteColor;
-        font-family: Roboto-Regular;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: normal;
-        line-height: 16px;
         margin-bottom: 0;
         margin-left: 14px;
+        @include styleTag(
+          $subtitleWhiteColor,
+          Roboto-Regular,
+          14px,
+          normal,
+          normal,
+          initial,
+          16px
+        );
       }
       a {
-        color: $whiteTone;
-        font-family: Roboto-Regular;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: normal;
-        line-height: 16px;
         text-decoration: none;
+        @include styleTag(
+          $whiteTone,
+          Roboto-Regular,
+          14px,
+          normal,
+          normal,
+          initial,
+          16px
+        );
       }
     }
   }
-
   .navbar-icons {
     @include flexCenter(row, center, center);
-
     .navbar-second-iconImage {
       display: flex;
     }

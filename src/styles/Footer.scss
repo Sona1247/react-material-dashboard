@@ -1,28 +1,32 @@
 @import "./variables";
 @import "fonts.scss";
 .footer-side {
-
   border-top: 1px solid $borderWhiteTone;
-
   margin: 19px 30px 54px 20px;
   padding: 16px 0 0 0;
   @include flexCenter(column, initial, initial);
   h3 {
-    color: $grayTitleColor;
-    font-family: Roboto-Regular;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: normal;
-    line-height: 22px;
+    @include styleTag(
+      $grayTitleColor,
+      Roboto-Regular,
+      14px,
+      normal,
+      normal,
+      initial,
+      22px
+    );
   }
   p {
-    color: $graySubtitleColor;
-    font-family: Roboto-Regular;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: normal;
-    line-height: 18px;
     mix-blend-mode: normal;
     opacity: 0.5;
+    @include styleTag(
+      $graySubtitleColor,
+      Roboto-Regular,
+      12px,
+      normal,
+      normal,
+      initial,
+      18px
+    );
   }
 }

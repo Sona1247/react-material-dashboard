@@ -1,5 +1,6 @@
 $blueTone: #1070ca;
 $grayFirstTone: #3a3b3f;
+$spanGrayTone:#637381;
 $whiteTone: #ffffff;
 $borderWhiteTone: #dfe3e8;
 $blackBorderColor: rgba(63, 63, 68, 0.005);
@@ -39,8 +40,9 @@ $lightBackgroundColor: #f6f9fd;
   $fontSize,
   $fontStyle,
   $fontWeight,
-  $lineHeight,
-  $letterSpace
+  $letterSpace,
+  $lineHeight
+ 
 ) {
   color: $color;
   font-family: $fontFamily;

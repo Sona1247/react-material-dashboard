@@ -1,13 +1,11 @@
 @import "fonts.scss";
 @import "./variables";
 .search-content {
-
   padding: 24px 27px 33px 24px;
   width: 100%;
   @include flexCenter(row, space-between, center);
   .search-content-buttons {
     @include flexCenter(row, center, center);
-
     .filter-mob {
       align-items: center;
       background: $whiteTone;
@@ -18,56 +16,54 @@
       cursor: pointer;
       display: none;
       outline: none;
-
       padding: 8px 22px;
       h2 {
-        color: $grayFirstTone;
-        font-family: Roboto-Medium;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 500;
-        letter-spacing: 1.25px;
-        line-height: 16px;
         text-align: center;
         text-transform: uppercase;
+        @include styleTag(
+          $grayFirstTone,
+          Roboto-Medium,
+          14px,
+          normal,
+          500,
+          1.25px,
+          16px
+        );
       }
       img {
         padding-right: 8px;
       }
     }
-
     .add {
-
       background: $blueLightTone;
       border: none;
       border-radius: 4px;
       box-shadow: 0px 1px 1px $shadowDarkColor, 0px 2px 1px $boxShadowColor,
         0px 1px 3px $darkboxShadowColor;
       cursor: pointer;
-
       outline: none;
       padding: 10px 16px;
       @include flexCenter(row, initial, center);
       h2 {
-        color: $whiteTone;
-        font-family: Roboto-Medium;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 500;
-        letter-spacing: 1.25px;
-        line-height: 16px;
         text-align: center;
         text-transform: uppercase;
+        @include styleTag(
+          $whiteTone,
+          Roboto-Medium,
+          14px,
+          normal,
+          500,
+          1.25px,
+          16px
+        );
       }
       img {
         padding-right: 14px;
       }
     }
   }
-
   .search-content-first-side {
     @include flexCenter(row, initial, center);
-
     input {
       &:hover {
         border: 0px transparent !important;
@@ -79,45 +75,46 @@
       }
     }
     .filter {
-
       background: $whiteTone;
       border: none;
       border-radius: 4px;
       box-shadow: 0px 1px 1px $shadowDarkColor, 0px 2px 1px $boxShadowColor,
         0px 1px 3px $darkboxShadowColor;
       cursor: pointer;
-
       margin-right: 28px;
       outline: none;
       padding: 8px 22px;
       @include flexCenter(row, initial, center);
       h2 {
-        color: $grayFirstTone;
-        font-family: Roboto-Medium;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 500;
-        letter-spacing: 1.25px;
-        line-height: 16px;
         text-align: center;
         text-transform: uppercase;
+        @include styleTag(
+          $grayFirstTone,
+          Roboto-Medium,
+          14px,
+          normal,
+          500,
+          1.25px,
+          16px
+        );
       }
       img {
         padding-right: 8px;
       }
     }
-
     .MuiOutlinedInput-input {
       padding: 12.5px 0;
     }
     input::placeholder {
-      color: $graySecondTone;
-      font-family: Roboto-Regular;
-      font-size: 14px;
-      font-style: normal;
-      font-weight: normal;
-      letter-spacing: -0.05px;
-      line-height: 16px;
+      @include styleTag(
+        $graySecondTone,
+        Roboto-Regular,
+        14px,
+        normal,
+        normal,
+        -0.05px,
+        16px
+      );
     }
     .MuiOutlinedInput-adornedStart {
       background: $whiteTone;
@@ -126,7 +123,6 @@
       outline: none !important;
       padding-left: 0;
       width: 520px;
-
       button {
         padding: 4px 14px;
       }

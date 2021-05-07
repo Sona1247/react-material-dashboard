@@ -21,6 +21,21 @@
   .main .content .charts .chart-all-content {
     height: 70%;
   }
+ .content .all-progressbar-content .header-side-progressBar h2{
+   font-size: 13px;
+ }
+ .content .all-progressbar-content .header-side-progressBar .header-second-side p{
+   font-size:11px;
+ }
+ .content .all-progressbar-content .header-side-progressBar .header-second-side img{
+   height: 5px;
+ }
+ .content .all-progressbar-content .last-side-progressBar h4{
+   font-size:11px;
+ }
+ .content .all-progressbar-content .last-side-progressBar img {
+   height: 7px;
+ }
 }
 @media only screen and (max-width: 850px) {
     .main .content .charts {

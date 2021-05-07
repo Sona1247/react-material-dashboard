@@ -15,15 +15,17 @@
     padding-top: 8px;
     @include flexCenter(row, flex-end, center);
     .view {
-      color: $blueTone;
-      font-family: Roboto-Medium;
-      font-size: 14px;
-      font-style: normal;
-      font-weight: 500;
-      letter-spacing: -0.05px;
-      line-height: 20px;
       text-align: right;
       text-decoration: none;
+      @include styleTag(
+        $blueTone,
+        Roboto-Medium,
+        14px,
+        normal,
+        500,
+        -0.05px,
+        20px
+      );
       &:hover {
         text-decoration: underline;
       }
@@ -35,32 +37,34 @@
   }
   .products {
     @include flexCenter(row, flex-start, center);
-
     .product-title {
-      color: $grayFirstTone;
-      font-family: Roboto-Medium;
-      font-size: 16px;
-      font-style: normal;
-      font-weight: 500;
-      letter-spacing: -0.05px;
-      line-height: 20px;
       margin-bottom: 0;
+      @include styleTag(
+        $grayFirstTone,
+        Roboto-Medium,
+        16px,
+        normal,
+        500,
+        -0.05px,
+        20px
+      );
     }
     .product-total {
-      color: $graySecondTone;
-      font-family: Roboto-Regular;
-      font-size: 12px;
-      font-style: normal;
-      font-weight: normal;
-      line-height: 16px;
       margin-bottom: 0;
       padding-left: 15px;
+      @include styleTag(
+        $graySecondTone,
+        Roboto-Regular,
+        12px,
+        normal,
+        normal,
+        initial,
+        16px
+      );
     }
   }
   .applications {
-
     border-bottom: 1px solid $borderColor;
-
     margin-top: 25px;
     padding-bottom: 20px;
     @include flexCenter(row, space-between, center);
@@ -69,7 +73,6 @@
     }
     .application-side {
       @include flexCenter(row, center, center);
-
       .application-image {
         height: 63px;
         width: 63px;
@@ -77,22 +80,27 @@
       .applications-content {
         margin-left: 32px;
         .title {
-          color: $grayFirstTone;
-          font-family: Roboto-Medium;
-          font-size: 16px;
-          font-style: normal;
-          font-weight: 500;
-          letter-spacing: -0.0571429px;
-          line-height: 20px;
+          @include styleTag(
+            $grayFirstTone,
+            Roboto-Medium,
+            16px,
+            normal,
+            500,
+            -0.0571429px,
+            20px
+          );
         }
         .subtitle {
-          color: $graySecondTone;
-          font-family: Roboto-Regular;
-          font-size: 12px;
-          font-style: normal;
-          font-weight: normal;
-          line-height: 16px;
           margin-bottom: 0;
+          @include styleTag(
+            $graySecondTone,
+            Roboto-Regular,
+            12px,
+            normal,
+            normal,
+            initial,
+            16px
+          );
         }
       }
     }
