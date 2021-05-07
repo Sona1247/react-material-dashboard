@@ -25,7 +25,7 @@ const Ul = styled.ul`
     height: 100vh;
     width: 100%;
     padding-top: 3.5rem;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.4s ease-in-out;
     li {
       color: #fff;
     }
@@ -37,6 +37,10 @@ export default function RightDirectionNav({ open }) {
   const listKey = useSelector((state) => state.linkDataReducer);
   const linkClick = (key) => {
     dispatch(changeLink(key));
+    document.querySelector(".sc-gtsrHT").classList.remove("dpkqfm")
+    document.querySelector(".sc-bdnxRM").classList.add("gEseQU")
+    document.querySelector(".sc-bdnxRM").classList.remove("fuRgLU")
+    document.querySelector(".sc-gtsrHT").classList.add("fXvcEa")
   };
   const sidebarList = [
     {
