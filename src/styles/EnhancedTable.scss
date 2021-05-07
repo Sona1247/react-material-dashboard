@@ -113,15 +113,15 @@
     width: 100%;
   }
   .tableRow {
-    align-items: center;
-    display: flex;
+    @include flexCenter(row, initial, center);
+
     img {
       padding-right: 12px;
     }
   }
   .tableAvatarPic {
-    align-items: center;
-    display: flex;
+    @include flexCenter(row, initial, center);
+
     img {
       padding-right: 12px;
     }

@@ -1,39 +1,52 @@
-$blueTone:#1070ca;
-$grayFirstTone:#3a3b3f;
-$whiteTone:#ffffff;
-$borderWhiteTone:#dfe3e8;
-$blackBorderColor:rgba(63, 63, 68, 0.005);
-$darkBackground:rgba(51, 51, 51, 0.2);
-$shadowDarkColor:rgba(0, 0, 0, 0.14);
-$boxShadowColor:rgba(0, 0, 0, 0.12);
-$darkboxShadowColor:rgba(0, 0, 0, 0.2);
-$whiteSecondTone:#F2F2F2;
-$graySecondTone:#9ea0a5;
-$normalGrayTone:#66788a;
-$grayTitleColor:#616161;
-$graySubtitleColor:#6b6c6f;
-$blueLightTone:#1665d8;
-$darkWhiteTone:#d4e6ff;
-$subtitleWhiteColor:#cdd1ea;
-$blackTone:#000000;
-$textBlackTone:rgba(0, 0, 0, 0.328974);
-$shadowdarkBlackTone:rgba(63, 63, 68, 0.05);
-$shadowlightBlackTone:rgba(63, 63, 68, 0.15);
-$lightBlackTone:#212529;
-$rectColor:#3f51b5;
-$borderColor:#e4e7eb;
-$lightRedTone:#ec4c47;
-$darkRedColor:#bf0e08;
-$lightGreenTone:#47b881;
-$lightBackgroundColor:#f6f9fd;
+$blueTone: #1070ca;
+$grayFirstTone: #3a3b3f;
+$whiteTone: #ffffff;
+$borderWhiteTone: #dfe3e8;
+$blackBorderColor: rgba(63, 63, 68, 0.005);
+$darkBackground: rgba(51, 51, 51, 0.2);
+$shadowDarkColor: rgba(0, 0, 0, 0.14);
+$boxShadowColor: rgba(0, 0, 0, 0.12);
+$darkboxShadowColor: rgba(0, 0, 0, 0.2);
+$whiteSecondTone: #f2f2f2;
+$graySecondTone: #9ea0a5;
+$normalGrayTone: #66788a;
+$grayTitleColor: #616161;
+$graySubtitleColor: #6b6c6f;
+$blueLightTone: #1665d8;
+$darkWhiteTone: #d4e6ff;
+$subtitleWhiteColor: #cdd1ea;
+$blackTone: #000000;
+$textBlackTone: rgba(0, 0, 0, 0.328974);
+$shadowdarkBlackTone: rgba(63, 63, 68, 0.05);
+$shadowlightBlackTone: rgba(63, 63, 68, 0.15);
+$lightBlackTone: #212529;
+$rectColor: #3f51b5;
+$borderColor: #e4e7eb;
+$lightRedTone: #ec4c47;
+$darkRedColor: #bf0e08;
+$lightGreenTone: #47b881;
+$lightBackgroundColor: #f6f9fd;
 
-@mixin flexCenter($direction,$horizontal,$align) {
-    display: flex;
-    flex-direction: $direction;
-    justify-content: $horizontal;
-    align-items: $align;
-  }
-  @mixin styleTag($color,$fontFamily,$fontSize,$letterSpace){
-      color:$color,
-
-  }
+@mixin flexCenter($direction, $horizontal, $align) {
+  align-items: $align;
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $horizontal;
+}
+@mixin styleTag(
+  $color,
+  $fontFamily,
+  $fontSize,
+  $fontStyle,
+  $fontWeight,
+  $lineHeight,
+  $letterSpace
+) {
+  color: $color;
+  font-family: $fontFamily;
+  font-size: $fontSize;
+  font-style: $fontStyle;
+  font-weight: $fontWeight;
+  letter-spacing: $letterSpace;
+  line-height: $lineHeight;
+}

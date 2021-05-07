@@ -8,21 +8,19 @@
 }
 
 .navbar-side {
-  align-items: center;
+
   background: $rectColor;
-  display: flex;
-  justify-content: space-between;
+
   width: 100%;
+  @include flexCenter(row, space-between, center);
 
   .navbar-logo-link {
-    align-items: center;
-    display: flex;
+    @include flexCenter(row, initial, center);
 
     .navbar-logo {
-      align-items: center;
-      display: flex;
-      justify-content: center;
+
       padding: 14px 0 14px 14px;
+      @include flexCenter(row, center, center);
       h3 {
         color: $whiteTone;
         font-family: Roboto-Medium;
@@ -35,16 +33,16 @@
       }
     }
     .navbar-link {
-      align-items: center;
+
       background: $darkBackground;
 
       border-radius: 5px;
-      display: flex;
-      justify-content: center;
+
       margin-left: 34px;
       padding: 5px;
       padding-left: 7px;
       position: relative;
+      @include flexCenter(row, center, center);
 
       p {
         color: $subtitleWhiteColor;
@@ -57,22 +55,20 @@
         margin-left: 14px;
       }
       a {
-        text-decoration: none;
         color: $whiteTone;
         font-family: Roboto-Regular;
         font-size: 14px;
         font-style: normal;
         font-weight: normal;
         line-height: 16px;
+        text-decoration: none;
       }
-      
     }
   }
 
   .navbar-icons {
-    align-items: center;
-    display: flex;
-    justify-content: center;
+    @include flexCenter(row, center, center);
+
     .navbar-second-iconImage {
       display: flex;
     }

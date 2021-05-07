@@ -3,14 +3,13 @@
   width: 100%;
 }
 .apps-table {
-  display: flex;
+  @include flexCenter(row, initial, initial);
 
   .MuiTableCell-body {
     width: 140px;
   }
 }
 .charts {
-  display: flex;
-  justify-content: space-between;
   padding: 21px 24px 16px 20px;
+  @include flexCenter(row, space-between, initial);
 }

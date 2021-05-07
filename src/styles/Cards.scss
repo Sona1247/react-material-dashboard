@@ -1,7 +1,8 @@
 @import "fonts.scss";
 @import "./variables";
 .all-cards {
-  display: flex;
+  @include flexCenter(row, initial, initial);
+
   .second-card {
     margin: 0 22px 0 23px;
   }
@@ -14,6 +15,7 @@
   .first-card,
   .second-card,
   .third-card {
+
     background: $whiteTone;
     border: 1px solid $blackBorderColor;
     border-radius: 4px;
@@ -26,52 +28,54 @@
     padding: 20px 24px 30px 24px;
 
     width: 45%;
+    @include flexCenter(column, initial, initial);
 
     .card-text-content {
-      align-items: center;
-      display: flex;
-      justify-content: space-between;
+      @include flexCenter(row, space-between, center);
+
       .first-card-main-image {
-        align-items: center;
+
         background: $lightRedTone;
         border-radius: 50%;
+
         height: 64px;
-        justify-content: center;
+
         width: 64px;
+        @include flexCenter(row, center, center);
         img {
           height: 28px;
           width: 28px;
         }
       }
       .second-card-main-image {
-        align-items: center;
+
         background: $lightGreenTone;
         border-radius: 50%;
         height: 64px;
-        justify-content: center;
+
         width: 64px;
+        @include flexCenter(row, center, center);
         img {
           height: 28px;
           width: 28px;
         }
       }
       .third-card-main-image {
-        align-items: center;
+
         background: $blueTone;
         border-radius: 50%;
         height: 64px;
-        justify-content: center;
+
         width: 64px;
+        @include flexCenter(row, center, center);
         img {
           height: 18px;
           width: 28px;
         }
       }
       div {
-        align-items: flex-start;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        @include flexCenter(column, center, flex-start);
+
         h3 {
           color: $normalGrayTone;
           font-family: Roboto-Bold;
@@ -95,10 +99,9 @@
       }
     }
     .card-value-content {
-      align-items: center;
-      display: flex;
-      justify-content: flex-start;
+
       padding-top: 36px;
+      @include flexCenter(row, flex-start, center);
       .overPicture1 {
         position: absolute;
       }
@@ -141,30 +144,27 @@
     }
   }
   .fourth-card {
+
     background: $rectColor;
     border: 1px solid $blackBorderColor;
     border-radius: 4px;
     box-shadow: 0px 1px 0px $shadowdarkBlackTone,
       0px 1px 3px $shadowlightBlackTone;
-    display: flex;
-    flex-direction: column;
+
     height: 152px;
     margin-right: 27px;
     margin-top: 21px;
     padding: 20px 24px 30px 24px;
     width: 45%;
+    @include flexCenter(column, initial, initial);
     .fourth-card-text-content {
-      align-items: center;
-      display: flex;
-      justify-content: space-between;
+      @include flexCenter(row, space-between, center);
+
       img {
         width: 48px;
       }
       div {
-        align-items: flex-start;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        @include flexCenter(column, center, flex-start);
 
         h3 {
           color: $whiteTone;
@@ -189,10 +189,9 @@
       }
     }
     .fourth-card-value-content {
-      align-items: center;
-      display: flex;
-      justify-content: flex-start;
+
       padding-top: 42px;
+      @include flexCenter(row, flex-start, center);
       .card-image7 {
         cursor: pointer;
       }

@@ -5,21 +5,22 @@
   padding-top: 21px;
 }
 .chart-all-content {
+
   background: $whiteTone;
   border: 1px solid $blackBorderColor;
   border-radius: 4px;
   box-shadow: 0px 1px 0px $shadowdarkBlackTone,
     0px 1px 3px $shadowlightBlackTone;
-  display: flex;
-  flex-direction: column;
+
   height: 519px;
   width: 24%;
+  @include flexCenter(column, initial, initial);
   .chart-header {
-    align-items: center;
+
     border-bottom: 1px solid $borderColor;
-    display: flex;
-    justify-content: space-between;
+
     padding: 18px 24px 17px 24px;
+    @include flexCenter(row, space-between, center);
     .chart-header-title {
       color: $grayFirstTone;
       font-family: Roboto-Medium;
@@ -34,22 +35,17 @@
     }
   }
   .chartText {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+
     padding: 24px 0 38px 0;
+    @include flexCenter(column, center, center);
   }
   .chart-content-container {
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
+    @include flexCenter(row, space-between, center);
+
     .chart-content {
-      align-items: center;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
+
       padding: 10px 20px;
+      @include flexCenter(column, center, center);
       .chart-title {
         color: $graySecondTone;
         font-family: Roboto-Regular;
@@ -73,17 +69,17 @@
   .chart-last-side,
   .first-side,
   .second-side {
-    display: flex;
+    @include flexCenter(row, initial, initial);
   }
   .chart-last-side {
-    align-items: center;
+
     border-top: 1px solid $borderColor;
-    justify-content: space-between;
+
     padding: 10px;
+    @include flexCenter(row, space-between, center);
     .first-side,
     .second-side {
-      align-items: center;
-      display: flex;
+      @include flexCenter(row, initial, center);
     }
     .first-side {
       p {

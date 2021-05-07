@@ -2,26 +2,26 @@
 @import "./variables";
 
 .sidebar {
-  align-items: flex-start;
+
   background: $whiteTone;
   border: 1px solid $blackBorderColor;
   box-shadow: 0px 1px 0px $shadowdarkBlackTone,
     0px 1px 3px $shadowlightBlackTone;
-  display: flex;
-  padding: 0 16px;
-  flex-direction: column;
+
   height: 1016px;
-  justify-content: flex-start;
-  
+
+  padding: 0 16px;
+
   width: 270px;
+  @include flexCenter(column, flex-start, flex-start);
   .avatar {
-    align-items: center;
+
     border-bottom: 1px solid $borderColor;
-    display: flex;
-    flex-direction: column;
+
     height: 170px;
-    justify-content: center;
+
     width: 100%;
+    @include flexCenter(column, center, center);
     h5 {
       margin: 16px 0 0 0;
     }
@@ -31,16 +31,16 @@
   }
 
   .side-NavLinks {
-    display: flex;
-    width: 100%;
-    flex-direction: column;
+
     padding-top: 24px;
+
+    width: 100%;
+    @include flexCenter(column, initial, initial);
     .sidebar-support-side {
-      align-items: flex-start;
+
       border-top: 1px solid $borderColor;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
+      @include flexCenter(column, center, flex-start);
+
       h4 {
         color: $textBlackTone;
         font-family: Roboto-Medium;
@@ -51,11 +51,10 @@
         margin: 24px 0 8px 0;
       }
       .supportLink {
-        align-items: center;
-        display: flex;
-        justify-content: flex-start;
+
         padding: 13px;
         width: 236px;
+        @include flexCenter(row, flex-start, center);
         &:hover {
           background: $lightBackgroundColor;
           border-radius: 4px;
@@ -110,11 +109,10 @@
       }
     }
     .subNavLinks {
-      align-items: center;
-      display: flex;
-      justify-content: flex-start;
+
       padding: 13px;
       width: 236px;
+      @include flexCenter(row, flex-start, center);
       img {
         cursor: pointer;
         rect {

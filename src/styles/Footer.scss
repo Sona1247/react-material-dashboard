@@ -1,11 +1,12 @@
 @import "./variables";
 @import "fonts.scss";
 .footer-side {
+
   border-top: 1px solid $borderWhiteTone;
-  display: flex;
-  flex-direction: column;
+
   margin: 19px 30px 54px 20px;
   padding: 16px 0 0 0;
+  @include flexCenter(column, initial, initial);
   h3 {
     color: $grayTitleColor;
     font-family: Roboto-Regular;

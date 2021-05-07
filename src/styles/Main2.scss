@@ -1,5 +1,5 @@
 @import "./variables";
 .main2 {
-  display: flex;
   width: 100%;
+  @include flexCenter(row, initial, initial);
 }

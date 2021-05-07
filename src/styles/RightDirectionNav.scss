@@ -2,24 +2,22 @@
 @import "./variables";
 
 .all-menu-links {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
+
   padding-top: 200px;
   text-align: left;
+  @include flexCenter(column, initial, center);
 }
 .navLinks {
-  align-items: center;
-  display: flex;
-  justify-content: center;
+
   margin-bottom: 18px;
+  @include flexCenter(row, center, center);
 }
 .subNavLinks {
-  align-items: center;
-  display: flex;
+
   height: 40px;
-  justify-content: center;
+
   width: 180px;
+  @include flexCenter(row, center, center);
   a {
     color: $whiteTone;
     font-family: Roboto-Medium;
@@ -27,4 +25,3 @@
     text-decoration: none;
   }
 }
-

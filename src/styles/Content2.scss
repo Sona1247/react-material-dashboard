@@ -1,6 +1,5 @@
 @import "./variables";
 .content2 {
-  display: flex;
-  flex-direction: column;
   width: 100%;
+  @include flexCenter(column, initial, initial);
 }
