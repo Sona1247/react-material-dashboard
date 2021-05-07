@@ -23,7 +23,7 @@ const App = () => {
       .get("http://heroku-hosting1.herokuapp.com/getData")
       .then((res) => dispatch(addData(res.data)))
       .catch((err) => console.log(err));
-  }, []);
+  }, [dispatch]);
 
   const data = useSelector((state) => state.allDataReducer);
   const route = useSelector((state) => state.linkDataReducer);

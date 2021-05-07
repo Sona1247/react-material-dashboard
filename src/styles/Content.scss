@@ -1,15 +1,15 @@
-.content{
-    width: 100%;
+.content {
+  width: 100%;
 }
-.apps-table{
-    display: flex;
-   
-    .MuiTableCell-body{
+.apps-table {
+  display: flex;
+
+  .MuiTableCell-body {
     width: 140px;
-    }
+  }
 }
-.charts{
-    display: flex;
-    justify-content: space-between;
-    padding: 21px 24px 16px 20px;
+.charts {
+  display: flex;
+  justify-content: space-between;
+  padding: 21px 24px 16px 20px;
 }

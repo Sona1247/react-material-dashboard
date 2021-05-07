@@ -1,25 +1,25 @@
 .all-menu-links {
+  align-items: center;
   display: flex;
   flex-direction: column;
   padding-top: 200px;
-  align-items: center;
   text-align: left;
 }
 .navLinks {
-  display: flex;
   align-items: center;
+  display: flex;
   justify-content: center;
   margin-bottom: 18px;
-
 }
 .subNavLinks {
-  display: flex;
-  height: 40px;width: 180px;
   align-items: center;
+  display: flex;
+  height: 40px;
   justify-content: center;
+  width: 180px;
   a {
-    padding-left: 10px;
     color: white;
+    padding-left: 10px;
     text-decoration: none;
   }
 }

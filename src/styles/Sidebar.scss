@@ -2,7 +2,6 @@
 
 .sidebar {
   align-items: flex-start;
-
   background: #ffffff;
   border: 1px solid rgba(63, 63, 68, 0.005);
   box-shadow: 0px 1px 0px rgba(63, 63, 68, 0.05),
@@ -85,8 +84,8 @@
         background: #f6f9fd;
         border-radius: 4px;
         box-shadow: inset 3px 0px 0px #1665d8;
-        
-        .list{
+
+        .list {
           color: #212529;
         }
         svg {
@@ -106,7 +105,6 @@
         line-height: 20px;
         padding-left: 10px;
         text-decoration: none;
-        
       }
     }
     .subNavLinks {

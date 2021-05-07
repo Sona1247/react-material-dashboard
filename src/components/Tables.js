@@ -44,11 +44,7 @@ const columns = [
 function createData(name, code, population, size, density) {
   return { name, code, population, size, density };
 }
-// const rows = [
-//   createData(
-//     "Ali",'Sona','Rahil','Eldar','Orxan'
-//   )
-// ]
+
 const useStyles = makeStyles({
   root: {
     width: "100%",

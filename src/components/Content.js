@@ -9,9 +9,10 @@ import Footer from "./Footer";
 import "../styles/Content.scss";
 const Content = () => {
   const data = useSelector((state) => state.allDataReducer);
+  const data2 = useSelector((state) => state.allDataReducer);
   return (
     <div className="content">
-      <Cards />
+      {data2.data ? <Cards table={data2} /> : ""}
       <div className="charts">
         <Progressbar />
         <Donut />
