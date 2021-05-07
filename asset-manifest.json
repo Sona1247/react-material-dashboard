@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/react-material-dashboard/static/css/main.8536c8eb.chunk.css",
-    "main.js": "/react-material-dashboard/static/js/main.02d5a050.chunk.js",
-    "main.js.map": "/react-material-dashboard/static/js/main.02d5a050.chunk.js.map",
+    "main.css": "/react-material-dashboard/static/css/main.26c4f4db.chunk.css",
+    "main.js": "/react-material-dashboard/static/js/main.669a2f02.chunk.js",
+    "main.js.map": "/react-material-dashboard/static/js/main.669a2f02.chunk.js.map",
     "runtime-main.js": "/react-material-dashboard/static/js/runtime-main.556bc17e.js",
     "runtime-main.js.map": "/react-material-dashboard/static/js/runtime-main.556bc17e.js.map",
-    "static/js/2.2ee82767.chunk.js": "/react-material-dashboard/static/js/2.2ee82767.chunk.js",
-    "static/js/2.2ee82767.chunk.js.map": "/react-material-dashboard/static/js/2.2ee82767.chunk.js.map",
+    "static/js/2.296adacb.chunk.js": "/react-material-dashboard/static/js/2.296adacb.chunk.js",
+    "static/js/2.296adacb.chunk.js.map": "/react-material-dashboard/static/js/2.296adacb.chunk.js.map",
     "index.html": "/react-material-dashboard/index.html",
-    "static/css/main.8536c8eb.chunk.css.map": "/react-material-dashboard/static/css/main.8536c8eb.chunk.css.map",
-    "static/js/2.2ee82767.chunk.js.LICENSE.txt": "/react-material-dashboard/static/js/2.2ee82767.chunk.js.LICENSE.txt",
+    "static/css/main.26c4f4db.chunk.css.map": "/react-material-dashboard/static/css/main.26c4f4db.chunk.css.map",
+    "static/js/2.296adacb.chunk.js.LICENSE.txt": "/react-material-dashboard/static/js/2.296adacb.chunk.js.LICENSE.txt",
     "static/media/ProgressBar.scss": "/react-material-dashboard/static/media/Roboto-Regular.a8d6ac03.ttf",
     "static/media/avatarPhoto.1f12d0f4.png": "/react-material-dashboard/static/media/avatarPhoto.1f12d0f4.png"
   },
   "entrypoints": [
     "static/js/runtime-main.556bc17e.js",
-    "static/js/2.2ee82767.chunk.js",
-    "static/css/main.8536c8eb.chunk.css",
-    "static/js/main.02d5a050.chunk.js"
+    "static/js/2.296adacb.chunk.js",
+    "static/css/main.26c4f4db.chunk.css",
+    "static/js/main.669a2f02.chunk.js"
   ]
 }
