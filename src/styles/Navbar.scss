@@ -64,6 +64,9 @@
     }
   }
   .navbar-icons {
+    img{
+      cursor: pointer;
+    }
     @include flexCenter(row, center, center);
     .navbar-second-iconImage {
       display: flex;

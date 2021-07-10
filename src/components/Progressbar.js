@@ -106,8 +106,12 @@ const Progressbar = () => {
 <div className="header-side-progressBar">
   <h2>Users by device</h2>
   <div className="header-second-side">
-    <p>Last 7 days</p>
-    <img src={progressDirection} alt="icon"/>
+    <p><select name="period" id="period">
+  <option value="day">Last 7 days</option>
+  <option value="month">Monthly</option>
+  <option value="year">Yearly</option>
+</select></p>
+   
   </div>
 </div>
     <div id="progress-chart">

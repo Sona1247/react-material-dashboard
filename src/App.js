@@ -16,7 +16,7 @@ import {
   Redirect,
 } from "react-router-dom";
 import axios from "axios";
-import { addData } from "./redux/actions/action";
+import { addData, changeLink } from "./redux/actions/action";
 const App = () => {
   const dispatch = useDispatch();
   useEffect(() => {
@@ -24,6 +24,17 @@ const App = () => {
       .get("https://heroku-hosting1.herokuapp.com/getData")
       .then((res) => dispatch(addData(res.data)))
       .catch((err) => console.log(err));
+if (
+  window.location.href === "http://localhost:3000/react-material-dashboard#/Dashboard"
+){
+  dispatch(changeLink(0));
+}
+else if(
+  window.location.href === "http://localhost:3000/react-material-dashboard#/Users"
+
+){
+  dispatch(changeLink(1));
+}
   }, [dispatch]);
 
   const data = useSelector((state) => state.allDataReducer);

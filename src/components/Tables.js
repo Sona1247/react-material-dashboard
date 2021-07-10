@@ -150,12 +150,11 @@ const Tables = (props) => {
             <p className="table-header-value">3200 total</p>
           </div>
           <div className="table-header-second-side">
-            <h3 className="table-header-subtitle">Sort by: Newest</h3>
-            <img
-              src={directionImage}
-              alt="direction"
-              className="table-direction"
-            />
+            <h3 className="table-header-subtitle">Sort by: <select name="sorting" id="sorting">
+  <option value="volvo">Newest</option>
+  <option value="saab">Oldest</option>
+</select></h3>
+            
             <button className="table-button">NEW ENTRY</button>
           </div>
         </div>

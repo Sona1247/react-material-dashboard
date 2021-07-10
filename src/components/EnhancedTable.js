@@ -3,9 +3,9 @@ import { useSelector } from "react-redux";
 import tableAvatar from "../images/tableAvatarPhoto.png";
 import "../styles/EnhancedTable.scss";
 import PropTypes from "prop-types";
-import clsx from "clsx";
 import { lighten, makeStyles } from "@material-ui/core/styles";
 import Table from "@material-ui/core/Table";
+import EnhancedTableToolbar from "./EnhancedTableToolbar"
 import TableBody from "@material-ui/core/TableBody";
 import TableCell from "@material-ui/core/TableCell";
 import TableContainer from "@material-ui/core/TableContainer";
@@ -13,13 +13,10 @@ import TableHead from "@material-ui/core/TableHead";
 import TablePagination from "@material-ui/core/TablePagination";
 import TableRow from "@material-ui/core/TableRow";
 import TableSortLabel from "@material-ui/core/TableSortLabel";
-import Toolbar from "@material-ui/core/Toolbar";
-import Typography from "@material-ui/core/Typography";
 import Paper from "@material-ui/core/Paper";
 import Checkbox from "@material-ui/core/Checkbox";
-import IconButton from "@material-ui/core/IconButton";
-import Tooltip from "@material-ui/core/Tooltip";
-import DeleteIcon from "@material-ui/icons/Delete";
+import moreIcon from "../images/moreIcon.png";
+import editIcon from "../images/editIcon.png";
 
 function descendingComparator(a, b, orderBy) {
   if (b[orderBy] < a[orderBy]) {
@@ -57,6 +54,13 @@ const headCells = [
     numeric: true,
     disablePadding: false,
     label: "Account Created",
+  },
+  {
+    id: "density",
+    label: "Actions",
+    minWidth: 100,
+    align: "right",
+    format: (value) => value.toFixed(2),
   },
 ];
 
@@ -121,69 +125,7 @@ EnhancedTableHead.propTypes = {
   rowCount: PropTypes.number.isRequired,
 };
 
-const useToolbarStyles = makeStyles((theme) => ({
-  root: {
-    paddingLeft: theme.spacing(2),
-    paddingRight: theme.spacing(1),
-  },
-  highlight:
-    theme.palette.type === "light"
-      ? {
-          color: theme.palette.primary.main,
-          backgroundColor: lighten(theme.palette.primary.light, 0.85),
-        }
-      : {
-          color: theme.palette.text.primary,
-          backgroundColor: theme.palette.primary.dark,
-        },
-  title: {
-    flex: "1 1 100%",
-  },
-}));
 
-const EnhancedTableToolbar = (props) => {
-  const classes = useToolbarStyles();
-  const { numSelected, onDeletedChecked } = props;
-
-  return (
-    <Toolbar
-      className={clsx(classes.root, {
-        [classes.highlight]: numSelected > 0,
-      })}
-    >
-      {numSelected > 0 ? (
-        <Typography
-          className={classes.title}
-          color="inherit"
-          variant="subtitle1"
-          component="div"
-        >
-          Selected {numSelected} users
-        </Typography>
-      ) : (
-        ""
-      )}
-
-      {numSelected > 0 ? (
-        <Tooltip title="Delete">
-          <IconButton
-            aria-label="delete"
-            color="primary"
-            onClick={onDeletedChecked}
-          >
-            <DeleteIcon />
-          </IconButton>
-        </Tooltip>
-      ) : (
-        ""
-      )}
-    </Toolbar>
-  );
-};
-
-EnhancedTableToolbar.propTypes = {
-  numSelected: PropTypes.number.isRequired,
-};
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -214,8 +156,8 @@ export default function EnhancedTable() {
   useEffect(() => {
     console.log(data1);
   });
-  function createData(name, id, number, email, date) {
-    return { name, id, number, email, date };
+  function createData(name, id, number, email, date, density) {
+    return { name, id, number, email, date, density };
   }
 
   const rows = [
@@ -224,63 +166,72 @@ export default function EnhancedTable() {
       data1.data.mailFirstRow.id,
       data1.data.mailFirstRow.number,
       data1.data.mailFirstRow.mail,
-      data1.data.mailFirstRow.date
+      data1.data.mailFirstRow.date,
+      [<img src={moreIcon} alt="" className="moreImage" />, <img src={editIcon} alt="" className="editImage"/>]
     ),
     createData(
       [<img src={tableAvatar} alt="avatar" />, data1.data.mailSecondRow.name],
       data1.data.mailSecondRow.id,
       data1.data.mailSecondRow.number,
       data1.data.mailSecondRow.mail,
-      data1.data.mailSecondRow.date
+      data1.data.mailSecondRow.date,
+      [<img src={moreIcon} alt="" className="moreImage" />, <img src={editIcon} alt="" className="editImage"/>]
     ),
     createData(
       [<img src={tableAvatar} alt="avatar" />, data1.data.mailThirdRow.name],
       data1.data.mailThirdRow.id,
       data1.data.mailThirdRow.number,
       data1.data.mailThirdRow.mail,
-      data1.data.mailThirdRow.date
+      data1.data.mailThirdRow.date,
+      [<img src={moreIcon} alt="" className="moreImage" />, <img src={editIcon} alt="" className="editImage" />]
     ),
     createData(
       [<img src={tableAvatar} alt="avatar" />, data1.data.mailFourthRow.name],
       data1.data.mailFourthRow.id,
       data1.data.mailFourthRow.phone,
       data1.data.mailFourthRow.mail,
-      data1.data.mailFourthRow.date
+      data1.data.mailFourthRow.date,
+      [<img src={moreIcon} alt="" className="moreImage" />, <img src={editIcon} alt="" className="editImage" />]
     ),
     createData(
       [<img src={tableAvatar} alt="avatar" />, data1.data.mailFifthRow.name],
       data1.data.mailFifthRow.id,
       data1.data.mailFifthRow.number,
       data1.data.mailFifthRow.email,
-      data1.data.mailFifthRow.date
+      data1.data.mailFifthRow.date,
+      [<img src={moreIcon} alt="" className="moreImage" />, <img src={editIcon} alt="" className="editImage" />]
     ),
     createData(
       [<img src={tableAvatar} alt="avatar" />, data1.data.mailSixthRow.name],
       data1.data.mailSixthRow.id,
       data1.data.mailSixthRow.number,
       data1.data.mailSixthRow.email,
-      data1.data.mailSixthRow.date
+      data1.data.mailSixthRow.date,
+      [<img src={moreIcon} alt="" className="moreImage" />, <img src={editIcon} alt="" className="editImage"/>]
     ),
     createData(
       [<img src={tableAvatar} alt="avatar" />, data1.data.mailSeventhRow.name],
       data1.data.mailSeventhRow.id,
       data1.data.mailSeventhRow.number,
       data1.data.mailSeventhRow.email,
-      data1.data.mailSeventhRow.date
+      data1.data.mailSeventhRow.date,
+      [<img src={moreIcon} alt="" className="moreImage" />, <img src={editIcon} alt="" className="editImage" />]
     ),
     createData(
       [<img src={tableAvatar} alt="avatar" />, data1.data.mailEighthRow.name],
       data1.data.mailEighthRow.id,
       data1.data.mailEighthRow.number,
       data1.data.mailEighthRow.email,
-      data1.data.mailEighthRow.date
+      data1.data.mailEighthRow.date,
+      [<img src={moreIcon} alt="" className="moreImage" />, <img src={editIcon} alt="" className="editImage" />]
     ),
     createData(
       [<img src={tableAvatar} alt="avatar" />, data1.data.mailNinethRow.name],
       data1.data.mailNinethRow.id,
       data1.data.mailNinethRow.number,
       data1.data.mailNinethRow.email,
-      data1.data.mailNinethRow.date
+      data1.data.mailNinethRow.date,
+      [<img src={moreIcon} alt="" className="moreImage"/>, <img src={editIcon} alt="" className="editImage"/>]
     ),
   ];
   const classes = useStyles();
@@ -408,6 +359,7 @@ export default function EnhancedTable() {
                         <TableCell align="right">{row.number}</TableCell>
                         <TableCell align="left">{row.email}</TableCell>
                         <TableCell align="right">{row.date}</TableCell>
+                        <TableCell align="left">{row.density}</TableCell>
                       </TableRow>
                     );
                   })}

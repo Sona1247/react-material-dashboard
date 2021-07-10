@@ -102,6 +102,7 @@
     }
     .first-side {
       p {
+        cursor: pointer;
         @include styleTag(
           $grayFirstTone,
          Roboto-Medium,
@@ -117,6 +118,7 @@
     }
     .second-side {
       p {
+        cursor: pointer;
         @include styleTag(
           $blueTone,
           Roboto-Medium,

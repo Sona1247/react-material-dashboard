@@ -4,6 +4,13 @@
   margin: 0 auto;
   padding: 0 24px 177px 17px;
   width: 100%;
+  .editImage{
+    margin-left: 20px;
+    cursor: pointer;
+  }
+  .moreImage{
+    cursor: pointer;
+  }
   .MuiTablePagination-toolbar {
     .MuiSelect-select.MuiSelect-select {
       mix-blend-mode: normal;
